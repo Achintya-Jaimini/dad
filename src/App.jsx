@@ -20,7 +20,9 @@ function App() {
   }, [location]);
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#F7F3F5' }}>
+    <>
+      <link rel="icon" href='/images/cropped-cropped-heooo-1-175x82.png' />
+      <div className="min-h-screen" style={{ backgroundColor: '#F7F3F5' }}>
       {/* Header */}
       <header className="site-header" style={{ backgroundColor: '#FFFFFF' }}>
         <div className="container mx-auto px-6 py-4">
@@ -28,7 +30,7 @@ function App() {
             {/* Logo */}
             <Link to="/" className="site-logo">
               <img 
-                src="images/cropped-cropped-heooo-1-175x82.png" 
+                src="/images/cropped-cropped-heooo-1-175x82.png" 
                 alt="Chef Aditya Jaimini" 
                 className="h-16 w-auto"
               />
@@ -115,6 +117,8 @@ function App() {
         </div>
       </footer>
     </div>
+  );
+  </>
   );
 }
 
