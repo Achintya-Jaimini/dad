@@ -7,7 +7,7 @@ export default function AboutPage() {
   }, []);
 
   const celebratedChefsImages = [
-    { src: 'https://adityajaimini.com/wp-content/uploads/2022/09/CBOI-3-rotated.jpeg', title: 'Celebrated Chefs Of India' },
+    { src: '../wp-content/uploads/2022/09/CBOI-3-rotated.jpeg', title: 'Celebrated Chefs Of India' },
     { src: 'https://adityajaimini.com/wp-content/uploads/2022/09/CBOI-1.jpeg', title: 'Celebrated Chefs Of India (book cover)' },
     { src: 'https://adityajaimini.com/wp-content/uploads/2022/09/with-Chef-Vikas-Khanna-IHG-1.jpg', title: 'with Chef Vikas Khanna, IHG' },
   ];
