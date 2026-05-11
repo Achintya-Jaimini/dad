@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Original site color scheme */
+:root {
+  --ast-global-color-0: #EF4D48;
+  --ast-global-color-1: #D90700;
+  --ast-global-color-2: #2B161B;
+  --ast-global-color-3: #453E3E;
+  --ast-global-color-4: #F7F3F5;
+  --ast-global-color-5: #FFFFFF;
+  --ast-global-color-6: #000000;
+}
+
+/* Header Navigation Styles */
+.site-header {
+  border-bottom: 1px solid #eaeaea;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: var(--ast-global-color-5);
+}
+
+.main-navigation ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navigation li {
+  position: relative;
+}
+
+.menu-link {
+  display: block;
+  padding: 10px 20px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--ast-global-color-6);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.menu-link:hover {
+  color: var(--ast-global-color-2);
+}
+
+.menu-link.current-menu-item {
+  color: var(--ast-global-color-2);
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons a {
+  color: var(--ast-global-color-2);
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons a:hover {
+  color: var(--ast-global-color-0);
+}
+
+/* Footer Navigation */
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav a {
+  font-size: 0.9375rem;
+  color: var(--ast-global-color-6);
+  text-decoration: none;
+  padding: 0 8px;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: var(--ast-global-color-2);
+}
+
+/* Footer Social */
+.footer-social a {
+  transition: color 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-link {
+    padding: 8px 12px;
+    font-size: 1rem;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  }
+}
+
+/* Animation Classes */
+.hover-scale {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Gallery Image Hover */
+.gallery-img-hover {
+  transition: transform 0.5s ease;
+}
+
+.gallery-img-hover:hover {
+  transform: scale(1.05);
+}
