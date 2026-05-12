@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import bgImage from './images/Gilawat-in-Parantha-Tacos-1.jpg';
 
 export default function AboutPage() {
   useEffect(() => {
@@ -47,7 +48,7 @@ export default function AboutPage() {
     <div className="min-h-screen bg-[#F7F3F5]">
       {/* Page Header */}
       <section className="relative py-20 bg-cover bg-center" style={{ 
-        backgroundImage: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)), url("https://adityajaimini.com/wp-content/uploads/2022/09/Gilawat-in-Parantha-Tacos-1.jpg")',
+        backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)), url(${bgImage})`,
       }}>
         <div className="container mx-auto px-6 text-center text-white">
           <h1 className="text-5xl md:text-6xl font-bold mb-4" style={{ fontFamily: "'Open Sans', sans-serif" }}>
