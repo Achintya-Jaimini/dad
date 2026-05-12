@@ -10,7 +10,7 @@ import AwardsPage from './pages/AwardsPage';
 import ContactPage from './pages/ContactPage';
 import Media from './pages/Media';  
 import './App.css';
-import logo from './images/cropped-cropped-heooo-1-175x82.png';
+import logo from './pages/images/cropped-cropped-heooo-1-175x82.png';
 
 function App() {
   const location = useLocation();

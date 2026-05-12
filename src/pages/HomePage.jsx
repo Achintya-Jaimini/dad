@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import bgImage from './images/Gilawat-in-Parantha-Tacos-1.jpg';
 
 export default function HomePage() {
   useEffect(() => {
@@ -30,7 +31,7 @@ export default function HomePage() {
       <div 
         className="relative min-h-screen flex items-center justify-center bg-cover bg-center"
         style={{ 
-          backgroundImage: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url("https://adityajaimini.com/wp-content/uploads/2022/09/Gilawat-in-Parantha-Tacos-1.jpg")',
+          backgroundImage: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url(${bgImage})',
         }}
       >
         <div className="container mx-auto px-6 text-center text-white">
