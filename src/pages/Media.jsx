@@ -13,64 +13,64 @@ export default function Media() {
       id: 1,
       title: 'Date Knight Show - NDTV GoodTimes',
       description: '13 episodes',
-      image: 'https://adityajaimini.com/wp-content/uploads/2022/09/DATE-KNIGHT-PIC-2-768x535.jpg',
-      thumbnail: 'https://adityajaimini.com/wp-content/uploads/2022/09/DATE-KNIGHT-PIC-2-768x535.jpg'
+      image: '../wp-content/uploads/2022/09/DATE-KNIGHT-PIC-2-768x535.jpg',
+      thumbnail: '../wp-content/uploads/2022/09/DATE-KNIGHT-PIC-2-768x535.jpg'
     },
     {
       id: 2,
       title: 'Date Knight - Episode 1',
       description: 'NDTV GoodTimes',
-      image: 'https://adityajaimini.com/wp-content/uploads/2022/09/image-7-768x392.png',
-      thumbnail: 'https://adityajaimini.com/wp-content/uploads/2022/09/image-7-768x392.png'
+      image: '../wp-content/uploads/2022/09/image-7-768x392.png',
+      thumbnail: '../wp-content/uploads/2022/09/image-7-768x392.png'
     },
     {
       id: 3,
       title: 'Date Knight - Episode 13',
       description: 'NDTV GoodTimes',
-      image: 'https://adityajaimini.com/wp-content/uploads/2022/09/Date-Knight-TV-Show-768x432.jpg',
-      thumbnail: 'https://adityajaimini.com/wp-content/uploads/2022/09/Date-Knight-TV-Show-768x432.jpg'
+      image: '../wp-content/uploads/2022/09/Date-Knight-TV-Show-768x432.jpg',
+      thumbnail: '../wp-content/uploads/2022/09/Date-Knight-TV-Show-768x432.jpg'
     },
     {
       id: 4,
       title: 'Quest - travelxp',
       description: 'Travel and food exploration show',
-      image: 'https://adityajaimini.com/wp-content/uploads/2022/09/quest-on-travel-xp-with-Alex-768x768.jpg',
-      thumbnail: 'https://adityajaimini.com/wp-content/uploads/2022/09/quest-on-travel-xp-with-Alex-768x768.jpg'
+      image: '../wp-content/uploads/2022/09/quest-on-travel-xp-with-Alex-768x768.jpg',
+      thumbnail: '../wp-content/uploads/2022/09/quest-on-travel-xp-with-Alex-768x768.jpg'
     },
     {
       id: 5,
       title: 'Simple Homemade Recipes',
       description: 'Hosted by Amul',
-      image: 'https://adityajaimini.com/wp-content/uploads/2022/09/AMUL-768x768.jpg',
-      thumbnail: 'https://adityajaimini.com/wp-content/uploads/2022/09/AMUL-768x768.jpg'
+      image: '../wp-content/uploads/2022/09/AMUL-768x768.jpg',
+      thumbnail: '../wp-content/uploads/2022/09/AMUL-768x768.jpg'
     },
     {
       id: 6,
       title: 'The Great Chefs of India',
       description: 'Zee Business',
-      image: 'https://adityajaimini.com/wp-content/uploads/2022/09/image-768x352.png',
-      thumbnail: 'https://adityajaimini.com/wp-content/uploads/2022/09/image-768x352.png'
+      image: '../wp-content/uploads/2022/09/image-768x352.png',
+      thumbnail: '../wp-content/uploads/2022/09/image-768x352.png'
     },
     {
       id: 8,
       title: 'Olive it up - NDTV GoodTimes',
       description: 'Culinary show featuring olive oil-based recipes',
-      image: 'https://adityajaimini.com/wp-content/uploads/2022/09/Olive-it-up-NDTV-1.jpg',
-      thumbnail: 'https://adityajaimini.com/wp-content/uploads/2022/09/Olive-it-up-NDTV-1.jpg'
+      image: '../wp-content/uploads/2022/09/Olive-it-up-NDTV-1.jpg',
+      thumbnail: '../wp-content/uploads/2022/09/Olive-it-up-NDTV-1.jpg'
     },
     {
       id: 9,
       title: 'Zee TV Khanna Khazana',
       description: "Chef's Special",
-      image: 'https://adityajaimini.com/wp-content/uploads/2022/09/image-2-768x546.png',
-      thumbnail: 'https://adityajaimini.com/wp-content/uploads/2022/09/image-2-768x546.png'
+      image: '../wp-content/uploads/2022/09/image-2-768x546.png',
+      thumbnail: '../wp-content/uploads/2022/09/image-2-768x546.png'
     },
     {
       id: 10,
       title: 'Feeding Frenzy - NDTV Metronation',
       description: 'Food and lifestyle show',
-      image: 'https://adityajaimini.com/wp-content/uploads/2022/09/image-6-768x509.png',
-      thumbnail: 'https://adityajaimini.com/wp-content/uploads/2022/09/image-6-768x509.png'
+      image: '../wp-content/uploads/2022/09/image-6-768x509.png',
+      thumbnail: '../wp-content/uploads/2022/09/image-6-768x509.png'
     }
   ];
 

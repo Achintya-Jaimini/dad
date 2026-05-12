@@ -11,8 +11,8 @@ export default function AwardsPage() {
       title: 'Leader of the Year - 2024',
       description: 'Certificate of recognition receiving',
       images: [
-        'https://adityajaimini.com/wp-content/uploads/2024/08/Image%20from%20Achintya%20Gmail.jpg',  
-        'https://adityajaimini.com/wp-content/uploads/2024/08/IMG%201708.jpg'
+        '../wp-content/uploads/2024/08/Image%20from%20Achintya%20Gmail.jpg',  
+        '../wp-content/uploads/2024/08/IMG%201708.jpg'
       ],
       imageLabels: ['Certificate of recognition receiving', 'Certificate of recognition']
     },
@@ -21,8 +21,8 @@ export default function AwardsPage() {
       title: 'Leader of the Quarter - Q2 - 2024',
       description: 'Quarterly leadership recognition award',
       images: [
-        'https://adityajaimini.com/wp-content/uploads/2024/08/Certificate-of-recognition-award-receiving.jpg',
-        'https://adityajaimini.com/wp-content/uploads/2024/08/Chef-Aditya-Jaiminis-certificate-of-recognition-scaled.jpg'
+        '../wp-content/uploads/2024/08/Certificate-of-recognition-award-receiving.jpg',
+        '../wp-content/uploads/2024/08/Chef-Aditya-Jaiminis-certificate-of-recognition-scaled.jpg'
       ],
       imageLabels: ['Award receiving', 'Certificate']
     },
@@ -31,8 +31,8 @@ export default function AwardsPage() {
       title: 'Best International Chef in USA - 2022',
       description: 'Recognition for outstanding culinary excellence',
       images: [
-        'https://adityajaimini.com/wp-content/uploads/2023/02/Best-International-Chef-in-USA-certificate-1-768x1021.jpeg',
-        'https://adityajaimini.com/wp-content/uploads/2023/03/Best-International-Chef-Award-in-The-USA-768x744.jpeg'
+        '../wp-content/uploads/2023/02/Best-International-Chef-in-USA-certificate-1-768x1021.jpeg',
+        '../wp-content/uploads/2023/03/Best-International-Chef-Award-in-The-USA-768x744.jpeg'
       ],
       imageLabels: ['Certificate', 'Award Ceremony']
     },
@@ -41,8 +41,8 @@ export default function AwardsPage() {
       title: 'Chef Of the Year Award - 2014',
       description: 'Association of Hospitality Professionals',
       images: [
-        'https://adityajaimini.com/wp-content/uploads/2022/09/CHEF-OF-THE-YEAR-2014-745x1024.jpg',
-        'https://adityajaimini.com/wp-content/uploads/2022/09/Chef-of-the-Year-award-receiving-768x510.jpg'
+        '../wp-content/uploads/2022/09/CHEF-OF-THE-YEAR-2014-745x1024.jpg',
+        '../wp-content/uploads/2022/09/Chef-of-the-Year-award-receiving-768x510.jpg'
       ],
       imageLabels: ['Certificate', 'Award Receiving']
     },
@@ -51,12 +51,12 @@ export default function AwardsPage() {
       title: 'Times Food Award',
       description: 'Winning years: 2012, 2015, 2016, 2017, 2018',
       images: [
-        'https://adityajaimini.com/wp-content/uploads/2022/09/times-food-award-2018-150x150.jpeg',
-        'https://adityajaimini.com/wp-content/uploads/2022/09/times-food-award-2012.jpeg',
-        'https://adityajaimini.com/wp-content/uploads/2022/09/times-food-award-2016-150x150.jpeg',
-        'https://adityajaimini.com/wp-content/uploads/2022/09/times-food-award-2017-150x150.jpeg',
-        'https://adityajaimini.com/wp-content/uploads/2022/09/times-food-award-2018-150x150.jpeg',
-        'https://adityajaimini.com/wp-content/uploads/2022/09/TIMES-FOOD-GUIDE-2018-spice-art-150x150.jpeg'
+        '../wp-content/uploads/2022/09/times-food-award-2018-150x150.jpeg',
+        '../wp-content/uploads/2022/09/times-food-award-2012.jpeg',
+        '../wp-content/uploads/2022/09/times-food-award-2016-150x150.jpeg',
+        '../wp-content/uploads/2022/09/times-food-award-2017-150x150.jpeg',
+        '../wp-content/uploads/2022/09/times-food-award-2018-150x150.jpeg',
+        '../wp-content/uploads/2022/09/TIMES-FOOD-GUIDE-2018-spice-art-150x150.jpeg'
       ],
       imageLabels: ['2012', '2015', '2016', '2017', '2018', 'Times Food Guide 2018 - Spice Art']
     }

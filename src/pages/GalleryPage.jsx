@@ -12,36 +12,36 @@ export default function GalleryPage() {
   // In News Gallery Images (from dad index.html (1).html)
   const inNewsImages = [
     //{ src: 'https://via.placeholder.com/218x300?text=THE+HINDU+JAN+2010', title: 'THE HINDU JAN 2010', description: 'Newspaper feature in The Hindu' },
-    { src: 'https://adityajaimini.com/wp-content/uploads/2022/09/HT-CITY-JUNE-2010-745x1024.jpg', title: 'Hindustan Times CITY JUNE 2010', description: 'Hindustan Times city edition feature' },
-    { src: 'https://adityajaimini.com/wp-content/uploads/2022/09/THE-PIONEER-DEC-2009-745x1024.jpg', title: 'THE PIONEER DEC 2009', description: 'The Pioneer newspaper feature' },
-    { src: 'https://adityajaimini.com/wp-content/uploads/2022/09/THE-PIONEER-APR-2010-745x1024.jpg', title: 'THE PIONEER APR 2010', description: 'The Pioneer newspaper article' },
-    { src: 'https://adityajaimini.com/wp-content/uploads/2022/09/HT-FEB-2010-768x558.jpg', title: 'Hindustan Times FEB 2010', description: 'Hindustan Times feature' },
-    { src: 'https://adityajaimini.com/wp-content/uploads/2022/09/TOI-FEB-2010-745x1024.jpg', title: 'Times Of India FEB 2010', description: 'Times of India article' },
-    { src: 'https://adityajaimini.com/wp-content/uploads/2022/09/DAV-UNITED-MAGAZINE-768x970.jpeg', title: 'DAV UNITED MAGAZINE', description: 'Magazine feature article' },
-    { src: 'https://adityajaimini.com/wp-content/uploads/2022/09/TOI-NEWS-ARTICLE-768x1024.jpeg', title: 'Times Of India NEWS ARTICLE', description: 'Times of India news coverage' },
-    { src: 'https://adityajaimini.com/wp-content/uploads/2022/09/DELHI-TIMES-NEWS-ARTICLE-755x1024.jpeg', title: 'DELHI TIMES NEWS ARTICLE', description: 'Delhi Times feature' },
+    { src: '../wp-content/uploads/2022/09/HT-CITY-JUNE-2010-745x1024.jpg', title: 'Hindustan Times CITY JUNE 2010', description: 'Hindustan Times city edition feature' },
+    { src: '../wp-content/uploads/2022/09/THE-PIONEER-DEC-2009-745x1024.jpg', title: 'THE PIONEER DEC 2009', description: 'The Pioneer newspaper feature' },
+    { src: '../wp-content/uploads/2022/09/THE-PIONEER-APR-2010-745x1024.jpg', title: 'THE PIONEER APR 2010', description: 'The Pioneer newspaper article' },
+    { src: '../wp-content/uploads/2022/09/HT-FEB-2010-768x558.jpg', title: 'Hindustan Times FEB 2010', description: 'Hindustan Times feature' },
+    { src: '../wp-content/uploads/2022/09/TOI-FEB-2010-745x1024.jpg', title: 'Times Of India FEB 2010', description: 'Times of India article' },
+    { src: '../wp-content/uploads/2022/09/DAV-UNITED-MAGAZINE-768x970.jpeg', title: 'DAV UNITED MAGAZINE', description: 'Magazine feature article' },
+    { src: '../wp-content/uploads/2022/09/TOI-NEWS-ARTICLE-768x1024.jpeg', title: 'Times Of India NEWS ARTICLE', description: 'Times of India news coverage' },
+    { src: '../wp-content/uploads/2022/09/DELHI-TIMES-NEWS-ARTICLE-755x1024.jpeg', title: 'DELHI TIMES NEWS ARTICLE', description: 'Delhi Times feature' },
   ];
 
   // Delicacies Gallery Images (from dad index.html 1602.html)
   const delicaciesImages = [
-    { src: 'https://adityajaimini.com/wp-content/uploads/2022/09/Makhmali-chenna-768x502.jpg', title: 'Makhmali Chenna', description: 'Silky smooth cottage cheese delicacy' },
-    { src: 'https://adityajaimini.com/wp-content/uploads/2022/09/Paan-ki-Rasmalai-768x492.jpg', title: 'Paan ki Rasmalai', description: 'Betel leaf flavored Rasmalai' },
-    { src: 'https://adityajaimini.com/wp-content/uploads/2022/09/Papad-ki-subzi-768x500.jpg', title: 'Papad ki Subzi', description: 'Unique papad based vegetable curry' },
-    { src: 'https://adityajaimini.com/wp-content/uploads/2022/09/Roomali-Paneer-768x501.jpg', title: 'Roomali Paneer', description: 'Handkerchief thin cottage cheese' },
-    { src: 'https://adityajaimini.com/wp-content/uploads/2022/09/Surkh-malai-khumb-768x596.jpg', title: 'Surkh Malai Khumb', description: 'Red cream mushrooms' },
-    { src: 'https://adityajaimini.com/wp-content/uploads/2022/09/tawa-til-asparagus-768x522.jpg', title: 'Tawa Til Asparagus', description: 'Griddle roasted sesame asparagus' },
-    { src: 'https://adityajaimini.com/wp-content/uploads/2022/09/amritsari-chole-768x504.jpg', title: 'Amritsari Chole', description: 'Authentic Amritsari chickpea curry' },
-    { src: 'https://adityajaimini.com/wp-content/uploads/2022/09/Chapli-kebab-768x553.jpg', title: 'Chapli Kebab', description: 'Spiced minced meat patties' },
+    { src: '../wp-content/uploads/2022/09/Makhmali-chenna-768x502.jpg', title: 'Makhmali Chenna', description: 'Silky smooth cottage cheese delicacy' },
+    { src: '../wp-content/uploads/2022/09/Paan-ki-Rasmalai-768x492.jpg', title: 'Paan ki Rasmalai', description: 'Betel leaf flavored Rasmalai' },
+    { src: '../wp-content/uploads/2022/09/Papad-ki-subzi-768x500.jpg', title: 'Papad ki Subzi', description: 'Unique papad based vegetable curry' },
+    { src: '../wp-content/uploads/2022/09/Roomali-Paneer-768x501.jpg', title: 'Roomali Paneer', description: 'Handkerchief thin cottage cheese' },
+    { src: '../wp-content/uploads/2022/09/Surkh-malai-khumb-768x596.jpg', title: 'Surkh Malai Khumb', description: 'Red cream mushrooms' },
+    { src: '../wp-content/uploads/2022/09/tawa-til-asparagus-768x522.jpg', title: 'Tawa Til Asparagus', description: 'Griddle roasted sesame asparagus' },
+    { src: '../wp-content/uploads/2022/09/amritsari-chole-768x504.jpg', title: 'Amritsari Chole', description: 'Authentic Amritsari chickpea curry' },
+    { src: '../wp-content/uploads/2022/09/Chapli-kebab-768x553.jpg', title: 'Chapli Kebab', description: 'Spiced minced meat patties' },
     //{ src: 'https://via.placeholder.com/1322x862?title=Gilawat+in+Parantha+Tacos', title: 'Gilawat in Parantha Tacos', description: 'Fusion taco with gilawat kebab' },
-    { src: 'https://adityajaimini.com/wp-content/uploads/2022/09/Gulabi-salmon-tikka-768x496.jpg', title: 'Gulabi Salmon Tikka', description: 'Pink salmon tikka' },
-    { src: 'https://adityajaimini.com/wp-content/uploads/2022/09/Makhmali-Chenna-2-768x551.jpg', title: 'Makhmali Chenna 2', description: 'Another variation of silky cottage cheese' },
-    { src: 'https://adityajaimini.com/wp-content/uploads/2022/09/Rum-Ball-768x441.jpg', title: 'Rum Ball', description: 'Rich rum-infused dessert balls' },
-    { src: 'https://adityajaimini.com/wp-content/uploads/2022/09/Tandoori-Lehsuni-JheengaGarlic-Prawns-768x736.jpg', title: 'Tandoori Lehsuni Jheenga', description: 'Garlic prawns tandoori style' },
-    { src: 'https://adityajaimini.com/wp-content/uploads/2022/09/Aqua-Tandoori-potato-768x512.jpg', title: 'Aqua Tandoori Potato', description: 'Tandoori style potatoes' },
-    { src: 'https://adityajaimini.com/wp-content/uploads/2022/09/Chenne-aur-Gulkand-ki-Jugalbandi-Rose-petal-jam-stuffed-indian-dessert-768x535.jpg', title: 'Chenne aur Gulkand ki Jugalbandi', description: 'Rose petal jam stuffed Indian dessert' },
-    { src: 'https://adityajaimini.com/wp-content/uploads/2022/09/chocolate-filled-gulab-jamun-768x532.jpg', title: 'Chocolate Filled Gulab Jamun', description: 'Gulab jamun with chocolate filling' },
+    { src: '../wp-content/uploads/2022/09/Gulabi-salmon-tikka-768x496.jpg', title: 'Gulabi Salmon Tikka', description: 'Pink salmon tikka' },
+    { src: '../wp-content/uploads/2022/09/Makhmali-Chenna-2-768x551.jpg', title: 'Makhmali Chenna 2', description: 'Another variation of silky cottage cheese' },
+    { src: '../wp-content/uploads/2022/09/Rum-Ball-768x441.jpg', title: 'Rum Ball', description: 'Rich rum-infused dessert balls' },
+    { src: '../wp-content/uploads/2022/09/Tandoori-Lehsuni-JheengaGarlic-Prawns-768x736.jpg', title: 'Tandoori Lehsuni Jheenga', description: 'Garlic prawns tandoori style' },
+    { src: '../wp-content/uploads/2022/09/Aqua-Tandoori-potato-768x512.jpg', title: 'Aqua Tandoori Potato', description: 'Tandoori style potatoes' },
+    { src: '../wp-content/uploads/2022/09/Chenne-aur-Gulkand-ki-Jugalbandi-Rose-petal-jam-stuffed-indian-dessert-768x535.jpg', title: 'Chenne aur Gulkand ki Jugalbandi', description: 'Rose petal jam stuffed Indian dessert' },
+    { src: '../wp-content/uploads/2022/09/chocolate-filled-gulab-jamun-768x532.jpg', title: 'Chocolate Filled Gulab Jamun', description: 'Gulab jamun with chocolate filling' },
     //{ src: 'https://via.placeholder.com/2048x1365?text=kulfi', title: 'Kulfi', description: 'Traditional Indian ice cream' },
-    { src: 'https://adityajaimini.com/wp-content/uploads/2022/09/Lahsun-Ki-Kheer-768x523.jpg', title: 'Lahsun Ki Kheer', description: 'Unique garlic rice pudding' },
+    { src: '../wp-content/uploads/2022/09/Lahsun-Ki-Kheer-768x523.jpg', title: 'Lahsun Ki Kheer', description: 'Unique garlic rice pudding' },
   ];
 
   const openLightbox = (image, title) => {
@@ -62,7 +62,7 @@ export default function GalleryPage() {
       <div 
         className="relative py-24 bg-cover bg-center"
         style={{ 
-          backgroundImage: 'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)), url("https://adityajaimini.com/wp-content/uploads/2022/09/Gilawat-in-Parantha-Tacos-1.jpg")',
+          backgroundImage: 'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)), url("../wp-content/uploads/2022/09/Gilawat-in-Parantha-Tacos-1.jpg")',
         }}
       >
         <div className="container mx-auto px-6 text-center text-white">
