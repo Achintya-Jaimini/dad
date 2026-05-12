@@ -1,47 +1,71 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import bgImage from './images/Gilawat-in-Parantha-Tacos-1.jpg';
-
+import cci1 from './uploads/2022/09/CBOI-3-rotated.jpeg';
+import cci2 from './uploads/2022/09/CBOI-1.jpeg';
+import cci3 from './uploads/2022/09/with-Chef-Vikas-Khanna-IHG-1.jpg';
+import cert1 from './uploads/2022/09/CERTIFICATE-LEAD-AUDITOE-ISO22000-745x1024.jpg';
+import cert2 from './uploads/2022/09/HACCP-INTERPRETATION-TRAINING-COURSE-737x1024.jpeg';
+import book1 from './uploads/2022/09/book-synopsis-150x150.jpeg';
+import book2 from './uploads/2022/09/recipe-by-adityabook-150x150.jpeg';
+import book3 from './uploads/2022/09/acknowledgement-book-aditya-150x150.jpeg';
+import book4 from './uploads/2022/09/book-cover-page-150x150.jpeg';
+import mentor1 from './uploads/2022/09/NHMCT-panel-discussion-633x1024.jpg';
+import mentor2 from './uploads/2022/09/Culinary-Mentor-Jagran-Lake-University-Bhopal-2-768x932.jpg';
+import mentor3 from './uploads/2022/09/certificate-of-Appreciation-IHM-Bhopal-768x546.jpg';
+import mentor4 from './uploads/2022/09/Resource-person-for-webinar-IHM-Bhopal-768x546.jpg';
+import judge1 from './uploads/2022/09/US-CRANBERRY-768x929.jpeg';
+import judge2 from './uploads/2022/09/US-Cranberry-1-768x768.jpeg';
+import judge3 from './uploads/2022/09/Culinary-masterclass-for-IHE-1-768x756.jpg';
+import judge4 from './uploads/2022/09/Judge-Food-Competitions-2.jpg';
+import speaker1 from './uploads/2022/09/WhatsApp-Image-2022-08-28-at-11.51.40-AM-768x576.jpeg';
+import speaker2 from './uploads/2022/09/SIAL-2018-eminent-speaker-768x384.jpg'; 
+import chefImage from "./uploads/2024/01/Screenshot-2024-01-07-084932.jpg";
+import pwp from "./uploads/2022/09/photo-with-President-Bush-and-PM-Manmohan-Singh.jpeg";
+import tf1 from "./uploads/2022/09/Times-Food-award.jpg";
+import tf2 from "./uploads/2022/09/WhatsApp-Image-2021-02-01-at-8.32.36-PM.jpeg";
+import rp from "./uploads/2022/09/Certificate-for-paper-published-in-international-conference-768x485.jpg";
+import speaker12 from "./uploads/2022/09/Executive-Commitee-ICF-2-724x1024.jpg";
 export default function AboutPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   const celebratedChefsImages = [
-    { src: './uploads/2022/09/CBOI-3-rotated.jpeg', title: 'Celebrated Chefs Of India' },
-    { src: './uploads/2022/09/CBOI-1.jpeg', title: 'Celebrated Chefs Of India (book cover)' },
-    { src: './uploads/2022/09/with-Chef-Vikas-Khanna-IHG-1.jpg', title: 'with Chef Vikas Khanna, IHG' },
+    { src: cci1, title: 'Celebrated Chefs Of India' },
+    { src: cci2, title: 'Celebrated Chefs Of India (book cover)' },
+    { src: cci3, title: 'with Chef Vikas Khanna, IHG' },
   ];
 
   const certificateImages = [
-    { src: './uploads/2022/09/CERTIFICATE-LEAD-AUDITOE-ISO22000-745x1024.jpg', title: 'CERTIFICATE LEAD AUDITOR ISO22000' },
-    { src: './uploads/2022/09/HACCP-INTERPRETATION-TRAINING-COURSE-737x1024.jpeg', title: 'HACCP INTERPRETATION TRAINING COURSE Certificate' },
+    { src: cert1, title: 'CERTIFICATE LEAD AUDITOR ISO22000' },
+    { src: cert2, title: 'HACCP INTERPRETATION TRAINING COURSE Certificate' },
   ];
 
   const bookImages = [
-    { src: './uploads/2022/09/book-synopsis-150x150.jpeg', title: 'book synopsis' },
-    { src: './uploads/2022/09/recipe-by-adityabook-150x150.jpeg', title: 'recipes by Aditya featured in a book' },
-    { src: './uploads/2022/09/acknowledgement-book-aditya-150x150.jpeg', title: 'acknowledgement book aditya' },
-    { src: './uploads/2022/09/book-cover-page-150x150.jpeg', title: 'book cover page' },
+    { src: book1, title: 'book synopsis' },
+    { src: book2, title: 'recipes by Aditya featured in a book' },
+    { src: book3, title: 'acknowledgement book aditya' },
+    { src: book4, title: 'book cover page' },
   ];
 
   const mentorImages = [
-    { src: './uploads/2022/09/NHMCT-panel-discussion-633x1024.jpg', title: 'Panelist at NHMCT' },
-    { src: './uploads/2022/09/Culinary-Mentor-Jagran-Lake-University-Bhopal-2-768x932.jpg', title: 'Culinary Mentor, Jagran Lake University, Bhopal' },
-    { src: './uploads/2022/09/certificate-of-Appreciation-IHM-Bhopal-768x546.jpg', title: 'certificate of Appreciation IHM Bhopal' },
-    { src: './uploads/2022/09/Resource-person-for-webinar-IHM-Bhopal-768x546.jpg', title: 'Resource person for webinar IHM Bhopal' },
+    { src: mentor1, title: 'Panelist at NHMCT' },
+    { src: mentor2, title: 'Culinary Mentor, Jagran Lake University, Bhopal' },
+    { src: mentor3, title: 'certificate of Appreciation IHM Bhopal' },
+    { src: mentor4, title: 'Resource person for webinar IHM Bhopal' },
   ];
 
   const judgeImages = [
-    { src: './uploads/2022/09/US-CRANBERRY-768x929.jpeg', title: 'US CRANBERRY' },
-    { src: './uploads/2022/09/US-Cranberry-1-768x768.jpeg', title: 'US Cranberry' },
-    { src: './uploads/2022/09/Culinary-masterclass-for-IHE-1-768x756.jpg', title: 'Culinary Masterclass for IHE' },
-    { src: './uploads/2022/09/Judge-Food-Competitions-2.jpg', title: 'Judging Food Competitions' },
+    { src: judge1, title: 'US CRANBERRY' },
+    { src: judge2, title: 'US Cranberry' },
+    { src: judge3, title: 'Culinary Masterclass for IHE' },
+    { src: judge4, title: 'Judging Food Competitions' },
   ];
 
   const speakerImages = [
-    { src: './uploads/2022/09/WhatsApp-Image-2022-08-28-at-11.51.40-AM-768x576.jpeg', title: 'Indian Culinary Forum Panelist' },
-    { src: './uploads/2022/09/SIAL-2018-eminent-speaker-768x384.jpg', title: 'SIAL 2018, eminent speaker' },
+    { src: speaker1, title: 'Indian Culinary Forum Panelist' },
+    { src: speaker2, title: 'SIAL 2018, eminent speaker' },
   ];
 
   return (
@@ -83,7 +107,7 @@ export default function AboutPage() {
             </div>
             <div data-aos="fade-left">
               <img 
-                src="../wp-content/uploads/2024/01/Screenshot-2024-01-07-084932.jpg" 
+                src={chefImage} 
                 alt="Chef at Marriott, Pleasanton" 
                 className="rounded-lg shadow-xl w-full object-cover"
               />
@@ -98,7 +122,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div data-aos="fade-right">
               <img 
-                src="../wp-content/uploads/2022/09/photo-with-President-Bush-and-PM-Manmohan-Singh.jpeg" 
+                src={pwp} 
                 alt="With President Bush and PM Manmohan Singh" 
                 className="rounded-lg shadow-xl w-full object-cover"
               />
@@ -131,7 +155,7 @@ export default function AboutPage() {
             <div className="rounded-lg overflow-hidden shadow-lg" data-aos="fade-right">
               <div className="bg-gray-200 aspect-[4/3] overflow-hidden">
                 <img 
-                  src="../wp-content/uploads/2022/09/Times-Food-award.jpg" 
+                  src={tf1}
                   alt="Times Food Award Receiving" 
                   className="w-full h-full object-cover object-center"
                 />
@@ -143,7 +167,7 @@ export default function AboutPage() {
             <div className="rounded-lg overflow-hidden shadow-lg" data-aos="fade-left">
               <div className="bg-gray-200 aspect-[4/3] overflow-hidden">
                 <img 
-                  src="../wp-content/uploads/2022/09/WhatsApp-Image-2021-02-01-at-8.32.36-PM.jpeg" 
+                  src={tf2}
                   alt="Times Food Award Receiving" 
                   className="w-full h-full object-contain object-center bg-gray-100"
                 />
@@ -352,7 +376,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div data-aos="fade-right">
               <img 
-                src="../wp-content/uploads/2022/09/Executive-Commitee-ICF-2-724x1024.jpg" 
+                src={speaker12}
                 alt="Executive Committee, Indian Culinary Forum" 
                 className="rounded-lg shadow-xl w-full object-cover"
               />
@@ -383,7 +407,7 @@ export default function AboutPage() {
             </div>
             <div data-aos="fade-left">
               <img 
-                src="../wp-content/uploads/2022/09/Certificate-for-paper-published-in-international-conference-768x485.jpg" 
+                src={rp}
                 alt="Certificate for paper published in international conference" 
                 className="rounded-lg shadow-xl w-full object-cover"
               />

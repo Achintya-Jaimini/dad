@@ -1,5 +1,31 @@
 import React, { useEffect, useState } from 'react';
 import bgImage from './images/Gilawat-in-Parantha-Tacos-1.jpg';
+import ini1 from './uploads/2022/09/HT-CITY-JUNE-2010-745x1024.jpg';
+import ini2 from './uploads/2022/09/THE-PIONEER-DEC-2009-745x1024.jpg';
+import ini3 from './uploads/2022/09/THE-PIONEER-APR-2010-745x1024.jpg';
+import ini4 from './uploads/2022/09/HT-FEB-2010-768x558.jpg';
+import ini5 from './uploads/2022/09/TOI-FEB-2010-745x1024.jpg';
+import ini6 from './uploads/2022/09/DAV-UNITED-MAGAZINE-768x970.jpeg';
+import ini7 from './uploads/2022/09/TOI-NEWS-ARTICLE-768x1024.jpeg';
+import ini8 from './uploads/2022/09/DELHI-TIMES-NEWS-ARTICLE-755x1024.jpeg';
+import ini9 from './uploads/2022/09/Makhmali-chenna-768x502.jpg';
+import ini10 from './uploads/2022/09/Paan-ki-Rasmalai-768x492.jpg';
+import ini11 from './uploads/2022/09/Papad-ki-subzi-768x500.jpg';
+import ini12 from './uploads/2022/09/Roomali-Paneer-768x501.jpg';
+import ini13 from './uploads/2022/09/Surkh-malai-khumb-768x596.jpg';
+import ini14 from './uploads/2022/09/tawa-til-asparagus-768x522.jpg';
+import ini15 from './uploads/2022/09/amritsari-chole-768x504.jpg';
+import ini16 from './uploads/2022/09/Chapli-kebab-768x553.jpg';
+import ini17 from './uploads/2022/09/Gulabi-salmon-tikka-768x496.jpg';
+import ini18 from './uploads/2022/09/Makhmali-Chenna-2-768x551.jpg';
+import ini19 from './uploads/2022/09/Rum-Ball-768x441.jpg';
+import ini20 from './uploads/2022/09/Tandoori-Lehsuni-JheengaGarlic-Prawns-768x736.jpg';
+import ini21 from './uploads/2022/09/Aqua-Tandoori-potato-768x512.jpg';
+import ini22 from './uploads/2022/09/Chenne-aur-Gulkand-ki-Jugalbandi-Rose-petal-jam-stuffed-indian-dessert-768x535.jpg';
+import ini23 from './uploads/2022/09/chocolate-filled-gulab-jamun-768x532.jpg';
+import ini24 from './uploads/2022/09/Lahsun-Ki-Kheer-768x523.jpg';
+
+
 
 export default function GalleryPage() {
   useEffect(() => {
@@ -13,36 +39,36 @@ export default function GalleryPage() {
   // In News Gallery Images (from dad index.html (1).html)
   const inNewsImages = [
     //{ src: 'https://via.placeholder.com/218x300?text=THE+HINDU+JAN+2010', title: 'THE HINDU JAN 2010', description: 'Newspaper feature in The Hindu' },
-    { src: '../wp-content/uploads/2022/09/HT-CITY-JUNE-2010-745x1024.jpg', title: 'Hindustan Times CITY JUNE 2010', description: 'Hindustan Times city edition feature' },
-    { src: '../wp-content/uploads/2022/09/THE-PIONEER-DEC-2009-745x1024.jpg', title: 'THE PIONEER DEC 2009', description: 'The Pioneer newspaper feature' },
-    { src: '../wp-content/uploads/2022/09/THE-PIONEER-APR-2010-745x1024.jpg', title: 'THE PIONEER APR 2010', description: 'The Pioneer newspaper article' },
-    { src: '../wp-content/uploads/2022/09/HT-FEB-2010-768x558.jpg', title: 'Hindustan Times FEB 2010', description: 'Hindustan Times feature' },
-    { src: '../wp-content/uploads/2022/09/TOI-FEB-2010-745x1024.jpg', title: 'Times Of India FEB 2010', description: 'Times of India article' },
-    { src: '../wp-content/uploads/2022/09/DAV-UNITED-MAGAZINE-768x970.jpeg', title: 'DAV UNITED MAGAZINE', description: 'Magazine feature article' },
-    { src: '../wp-content/uploads/2022/09/TOI-NEWS-ARTICLE-768x1024.jpeg', title: 'Times Of India NEWS ARTICLE', description: 'Times of India news coverage' },
-    { src: '../wp-content/uploads/2022/09/DELHI-TIMES-NEWS-ARTICLE-755x1024.jpeg', title: 'DELHI TIMES NEWS ARTICLE', description: 'Delhi Times feature' },
+    { src: ini1, title: 'Hindustan Times CITY JUNE 2010', description: 'Hindustan Times city edition feature' },
+    { src: ini2, title: 'THE PIONEER DEC 2009', description: 'The Pioneer newspaper feature' },
+    { src: ini3, title: 'THE PIONEER APR 2010', description: 'The Pioneer newspaper article' },
+    { src: ini4, title: 'Hindustan Times FEB 2010', description: 'Hindustan Times feature' },
+    { src: ini5, title: 'Times Of India FEB 2010', description: 'Times of India article' },
+    { src: ini6, title: 'DAV UNITED MAGAZINE', description: 'Magazine feature article' },
+    { src: ini7, title: 'Times Of India NEWS ARTICLE', description: 'Times of India news coverage' },
+    { src: ini8, title: 'DELHI TIMES NEWS ARTICLE', description: 'Delhi Times feature' },
   ];
 
   // Delicacies Gallery Images (from dad index.html 1602.html)
   const delicaciesImages = [
-    { src: '../wp-content/uploads/2022/09/Makhmali-chenna-768x502.jpg', title: 'Makhmali Chenna', description: 'Silky smooth cottage cheese delicacy' },
-    { src: '../wp-content/uploads/2022/09/Paan-ki-Rasmalai-768x492.jpg', title: 'Paan ki Rasmalai', description: 'Betel leaf flavored Rasmalai' },
-    { src: '../wp-content/uploads/2022/09/Papad-ki-subzi-768x500.jpg', title: 'Papad ki Subzi', description: 'Unique papad based vegetable curry' },
-    { src: '../wp-content/uploads/2022/09/Roomali-Paneer-768x501.jpg', title: 'Roomali Paneer', description: 'Handkerchief thin cottage cheese' },
-    { src: '../wp-content/uploads/2022/09/Surkh-malai-khumb-768x596.jpg', title: 'Surkh Malai Khumb', description: 'Red cream mushrooms' },
-    { src: '../wp-content/uploads/2022/09/tawa-til-asparagus-768x522.jpg', title: 'Tawa Til Asparagus', description: 'Griddle roasted sesame asparagus' },
-    { src: '../wp-content/uploads/2022/09/amritsari-chole-768x504.jpg', title: 'Amritsari Chole', description: 'Authentic Amritsari chickpea curry' },
-    { src: '../wp-content/uploads/2022/09/Chapli-kebab-768x553.jpg', title: 'Chapli Kebab', description: 'Spiced minced meat patties' },
+    { src: ini9, title: 'Makhmali Chenna', description: 'Silky smooth cottage cheese delicacy' },
+    { src: ini10, title: 'Paan ki Rasmalai', description: 'Betel leaf flavored Rasmalai' },
+    { src: ini11, title: 'Papad ki Subzi', description: 'Unique papad based vegetable curry' },
+    { src: ini12, title: 'Roomali Paneer', description: 'Handkerchief thin cottage cheese' },
+    { src: ini13, title: 'Surkh Malai Khumb', description: 'Red cream mushrooms' },
+    { src: ini14, title: 'Tawa Til Asparagus', description: 'Griddle roasted sesame asparagus' },
+    { src: ini15, title: 'Amritsari Chole', description: 'Authentic Amritsari chickpea curry' },
+    { src: ini16, title: 'Chapli Kebab', description: 'Spiced minced meat patties' },
     //{ src: 'https://via.placeholder.com/1322x862?title=Gilawat+in+Parantha+Tacos', title: 'Gilawat in Parantha Tacos', description: 'Fusion taco with gilawat kebab' },
-    { src: '../wp-content/uploads/2022/09/Gulabi-salmon-tikka-768x496.jpg', title: 'Gulabi Salmon Tikka', description: 'Pink salmon tikka' },
-    { src: '../wp-content/uploads/2022/09/Makhmali-Chenna-2-768x551.jpg', title: 'Makhmali Chenna 2', description: 'Another variation of silky cottage cheese' },
-    { src: '../wp-content/uploads/2022/09/Rum-Ball-768x441.jpg', title: 'Rum Ball', description: 'Rich rum-infused dessert balls' },
-    { src: '../wp-content/uploads/2022/09/Tandoori-Lehsuni-JheengaGarlic-Prawns-768x736.jpg', title: 'Tandoori Lehsuni Jheenga', description: 'Garlic prawns tandoori style' },
-    { src: '../wp-content/uploads/2022/09/Aqua-Tandoori-potato-768x512.jpg', title: 'Aqua Tandoori Potato', description: 'Tandoori style potatoes' },
-    { src: '../wp-content/uploads/2022/09/Chenne-aur-Gulkand-ki-Jugalbandi-Rose-petal-jam-stuffed-indian-dessert-768x535.jpg', title: 'Chenne aur Gulkand ki Jugalbandi', description: 'Rose petal jam stuffed Indian dessert' },
-    { src: '../wp-content/uploads/2022/09/chocolate-filled-gulab-jamun-768x532.jpg', title: 'Chocolate Filled Gulab Jamun', description: 'Gulab jamun with chocolate filling' },
+    { src: ini17, title: 'Gulabi Salmon Tikka', description: 'Pink salmon tikka' },
+    { src: ini18, title: 'Makhmali Chenna 2', description: 'Another variation of silky cottage cheese' },
+    { src: ini19, title: 'Rum Ball', description: 'Rich rum-infused dessert balls' },
+    { src: ini20, title: 'Tandoori Lehsuni Jheenga', description: 'Garlic prawns tandoori style' },
+    { src: ini21, title: 'Aqua Tandoori Potato', description: 'Tandoori style potatoes' },
+    { src: ini22, title: 'Chenne aur Gulkand ki Jugalbandi', description: 'Rose petal jam stuffed Indian dessert' },
+    { src: ini23, title: 'Chocolate Filled Gulab Jamun', description: 'Gulab jamun with chocolate filling' },
     //{ src: 'https://via.placeholder.com/2048x1365?text=kulfi', title: 'Kulfi', description: 'Traditional Indian ice cream' },
-    { src: '../wp-content/uploads/2022/09/Lahsun-Ki-Kheer-768x523.jpg', title: 'Lahsun Ki Kheer', description: 'Unique garlic rice pudding' },
+    { src: ini24, title: 'Lahsun Ki Kheer', description: 'Unique garlic rice pudding' },
   ];
 
   const openLightbox = (image, title) => {

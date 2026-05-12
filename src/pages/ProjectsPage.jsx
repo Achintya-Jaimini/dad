@@ -1,4 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import p1 from './uploads/2023/08/Egremontz.jpg';
+import p2 from './uploads/2023/08/The-Imperial-Spice.png';
+import p3 from './uploads/2023/08/k-se-kulcha.png';
+import p4 from './uploads/2023/08/Desi-Vibes.jpg';
+import p5 from './uploads/2023/08/Spice-Art.png';
 
 export default function ProjectsPage() {
   useEffect(() => {
@@ -15,7 +20,7 @@ export default function ProjectsPage() {
       title: 'Egremontz',
       description: 'A premium cunsultancy service for the hospitality industry',
       images: [
-        { src: '../wp-content/uploads/2023/08/Egremontz.jpg', label: 'Egremontz' }
+        { src: p1, label: 'Egremontz' }
       ]
     },
     {
@@ -23,7 +28,7 @@ export default function ProjectsPage() {
       title: 'The Imperial Spice',
       description: 'Authentic Indian fine dining experience',
       images: [
-        { src: '../wp-content/uploads/2023/08/The-Imperial-Spice.png', label: 'The Imperial Spice' }
+        { src: p2, label: 'The Imperial Spice' }
       ]
     },
     {
@@ -31,7 +36,7 @@ export default function ProjectsPage() {
       title: 'क Se Kulcha',
       description: 'Traditional kulcha specialty restaurant',
       images: [
-        { src: '../wp-content/uploads/2023/08/k-se-kulcha-300x300.png', label: 'क Se Kulcha' }
+        { src: p3, label: 'क Se Kulcha' }
       ]
     },
     {
@@ -39,7 +44,7 @@ export default function ProjectsPage() {
       title: 'Desi Vibes',
       description: 'Modern Indian street food concept',
       images: [
-        { src: '../wp-content/uploads/2023/08/Desi-Vibes-150x150.jpg', label: 'Desi Vibes' }
+        { src: p4, label: 'Desi Vibes' }
       ]
     },
     {
@@ -47,7 +52,7 @@ export default function ProjectsPage() {
       title: 'Spice Art',
       description: 'Award-winning Indian specialty restaurant',
       images: [
-        { src: '../wp-content/uploads/2023/08/Spice-Art.png', label: 'Spice Art' }
+        { src: p5, label: 'Spice Art' }
       ]
     }
   ];

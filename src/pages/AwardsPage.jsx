@@ -1,4 +1,17 @@
 import React, { useEffect } from 'react';
+import a1 from './uploads/2024/08/Certificate-of-recognition-award-receiving.jpg';
+import a2 from './uploads/2024/08/Chef-Aditya-Jaiminis-certificate-of-recognition-scaled.jpg';
+import a3 from './uploads/2023/02/Best-International-Chef-in-USA-certificate-1-768x1021.jpeg';
+import a4 from './uploads/2023/03/Best-International-Chef-Award-in-The-USA-768x744.jpeg';
+import a5 from './uploads/2022/09/CHEF-OF-THE-YEAR-2014-745x1024.jpg';
+import a6 from './uploads/2022/09/Chef-of-the-Year-award-receiving-768x510.jpg';
+import aa1 from './uploads/2024/08/Image from Achintya Gmail.jpg';
+import aa2 from './uploads/2024/08/IMG 1708.jpg';
+import t1 from './uploads/2022/09/times-food-award-2012.jpeg';
+import t2 from './uploads/2022/09/times-food-award-2016-150x150.jpeg';
+import t3 from './uploads/2022/09/times-food-award-2017-150x150.jpeg';
+import t4 from './uploads/2022/09/times-food-award-2018-150x150.jpeg';
+import t5 from './uploads/2022/09/TIMES-FOOD-GUIDE-2018-spice-art-150x150.jpeg';
 
 export default function AwardsPage() {
   useEffect(() => {
@@ -11,8 +24,8 @@ export default function AwardsPage() {
       title: 'Leader of the Year - 2024',
       description: 'Certificate of recognition receiving',
       images: [
-        '../wp-content/uploads/2024/08/Image%20from%20Achintya%20Gmail.jpg',  
-        '../wp-content/uploads/2024/08/IMG%201708.jpg'
+        a1,  
+        aa2
       ],
       imageLabels: ['Certificate of recognition receiving', 'Certificate of recognition']
     },
@@ -21,8 +34,8 @@ export default function AwardsPage() {
       title: 'Leader of the Quarter - Q2 - 2024',
       description: 'Quarterly leadership recognition award',
       images: [
-        '../wp-content/uploads/2024/08/Certificate-of-recognition-award-receiving.jpg',
-        '../wp-content/uploads/2024/08/Chef-Aditya-Jaiminis-certificate-of-recognition-scaled.jpg'
+        aa1,
+        a2
       ],
       imageLabels: ['Award receiving', 'Certificate']
     },
@@ -31,8 +44,8 @@ export default function AwardsPage() {
       title: 'Best International Chef in USA - 2022',
       description: 'Recognition for outstanding culinary excellence',
       images: [
-        '../wp-content/uploads/2023/02/Best-International-Chef-in-USA-certificate-1-768x1021.jpeg',
-        '../wp-content/uploads/2023/03/Best-International-Chef-Award-in-The-USA-768x744.jpeg'
+        a3,
+        a4
       ],
       imageLabels: ['Certificate', 'Award Ceremony']
     },
@@ -41,8 +54,8 @@ export default function AwardsPage() {
       title: 'Chef Of the Year Award - 2014',
       description: 'Association of Hospitality Professionals',
       images: [
-        '../wp-content/uploads/2022/09/CHEF-OF-THE-YEAR-2014-745x1024.jpg',
-        '../wp-content/uploads/2022/09/Chef-of-the-Year-award-receiving-768x510.jpg'
+        a5,
+        a6
       ],
       imageLabels: ['Certificate', 'Award Receiving']
     },
@@ -51,12 +64,11 @@ export default function AwardsPage() {
       title: 'Times Food Award',
       description: 'Winning years: 2012, 2015, 2016, 2017, 2018',
       images: [
-        '../wp-content/uploads/2022/09/times-food-award-2018-150x150.jpeg',
-        '../wp-content/uploads/2022/09/times-food-award-2012.jpeg',
-        '../wp-content/uploads/2022/09/times-food-award-2016-150x150.jpeg',
-        '../wp-content/uploads/2022/09/times-food-award-2017-150x150.jpeg',
-        '../wp-content/uploads/2022/09/times-food-award-2018-150x150.jpeg',
-        '../wp-content/uploads/2022/09/TIMES-FOOD-GUIDE-2018-spice-art-150x150.jpeg'
+        t1,
+        t2,
+        t3,
+        t4,
+        t5
       ],
       imageLabels: ['2012', '2015', '2016', '2017', '2018', 'Times Food Guide 2018 - Spice Art']
     }

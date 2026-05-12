@@ -1,4 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import p1 from './uploads/2022/09/DATE-KNIGHT-PIC-2-768x535.jpg';
+import p2 from './uploads/2022/09/image-7-768x392.png';
+import p3 from './uploads/2022/09/Date-Knight-TV-Show-768x432.jpg';
+import p4 from './uploads/2022/09/quest-on-travel-xp-with-Alex-768x768.jpg';
+import p5 from './uploads/2022/09/AMUL-768x768.jpg';
+import p6 from './uploads/2022/09/image-768x352.png';
+import p7 from './uploads/2022/09/Olive-it-up-NDTV-1.jpg';
+import p8 from './uploads/2022/09/image-2-768x546.png';
+import p9 from './uploads/2022/09/image-6-768x509.png';
 
 export default function Media() {
   useEffect(() => {
@@ -13,64 +22,64 @@ export default function Media() {
       id: 1,
       title: 'Date Knight Show - NDTV GoodTimes',
       description: '13 episodes',
-      image: '../wp-content/uploads/2022/09/DATE-KNIGHT-PIC-2-768x535.jpg',
-      thumbnail: '../wp-content/uploads/2022/09/DATE-KNIGHT-PIC-2-768x535.jpg'
+      image: p1,
+      thumbnail: p1
     },
     {
       id: 2,
       title: 'Date Knight - Episode 1',
       description: 'NDTV GoodTimes',
-      image: '../wp-content/uploads/2022/09/image-7-768x392.png',
-      thumbnail: '../wp-content/uploads/2022/09/image-7-768x392.png'
+      image: p2,
+      thumbnail: p2
     },
     {
       id: 3,
       title: 'Date Knight - Episode 13',
       description: 'NDTV GoodTimes',
-      image: '../wp-content/uploads/2022/09/Date-Knight-TV-Show-768x432.jpg',
-      thumbnail: '../wp-content/uploads/2022/09/Date-Knight-TV-Show-768x432.jpg'
+      image: p3,
+      thumbnail: p3
     },
     {
       id: 4,
       title: 'Quest - travelxp',
       description: 'Travel and food exploration show',
-      image: '../wp-content/uploads/2022/09/quest-on-travel-xp-with-Alex-768x768.jpg',
-      thumbnail: '../wp-content/uploads/2022/09/quest-on-travel-xp-with-Alex-768x768.jpg'
+      image: p4,
+      thumbnail: p4
     },
     {
       id: 5,
       title: 'Simple Homemade Recipes',
       description: 'Hosted by Amul',
-      image: '../wp-content/uploads/2022/09/AMUL-768x768.jpg',
-      thumbnail: '../wp-content/uploads/2022/09/AMUL-768x768.jpg'
+      image: p5,
+      thumbnail: p5
     },
     {
       id: 6,
       title: 'The Great Chefs of India',
       description: 'Zee Business',
-      image: '../wp-content/uploads/2022/09/image-768x352.png',
-      thumbnail: '../wp-content/uploads/2022/09/image-768x352.png'
+      image: p6,
+      thumbnail: p6
     },
     {
       id: 8,
       title: 'Olive it up - NDTV GoodTimes',
       description: 'Culinary show featuring olive oil-based recipes',
-      image: '../wp-content/uploads/2022/09/Olive-it-up-NDTV-1.jpg',
-      thumbnail: '../wp-content/uploads/2022/09/Olive-it-up-NDTV-1.jpg'
+      image: p7,
+      thumbnail: p7
     },
     {
       id: 9,
       title: 'Zee TV Khanna Khazana',
       description: "Chef's Special",
-      image: '../wp-content/uploads/2022/09/image-2-768x546.png',
-      thumbnail: '../wp-content/uploads/2022/09/image-2-768x546.png'
+      image: p8,
+      thumbnail: p8
     },
     {
       id: 10,
       title: 'Feeding Frenzy - NDTV Metronation',
       description: 'Food and lifestyle show',
-      image: '../wp-content/uploads/2022/09/image-6-768x509.png',
-      thumbnail: '../wp-content/uploads/2022/09/image-6-768x509.png'
+      image: p9,
+      thumbnail: p9
     }
   ];
 
