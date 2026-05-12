@@ -31,7 +31,7 @@ export default function HomePage() {
       <div 
         className="relative min-h-screen flex items-center justify-center bg-cover bg-center"
         style={{ 
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url({bgImage})`,
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url(${bgImage})`,
         }}
       >
         
