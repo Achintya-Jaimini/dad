@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-      <link rel="icon" href='/images/cropped-cropped-heooo-1-175x82.png' />
+      <link rel="icon" src='/images/cropped-cropped-heooo-1-175x82.png' />
       <div className="min-h-screen" style={{ backgroundColor: '#F7F3F5' }}>
       {/* Header */}
       <header className="site-header" style={{ backgroundColor: '#FFFFFF' }}>
