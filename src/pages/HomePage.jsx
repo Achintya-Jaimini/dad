@@ -3,7 +3,16 @@ import { Link } from 'react-router-dom';
 import bgImage from './images/Gilawat-in-Parantha-Tacos-1.jpg';
 import taj from './images/Taj_Hotels_logo.svg.png';
 import thePark from './images/the-park.png';
-
+import ihg from './uploads/2022/09/IHG_logo_InterContinental_Hotels_Group-1.png';
+import radisson from './uploads/2022/09/Radisson-Hotel-Group-logo.png';
+import gmr from './uploads/2022/09/GMR-Group-logo.png';
+import mariott from './uploads/2023/04/Mariott-Logo.jpg';
+import indianHotspot from './uploads/2022/09/INDIAN-HOTSPOT_COLOUR-LOGO_TRIMMED-768x668.png';
+import indianCulinaryForum from './uploads/2022/09/Indian-culinary-forum.jpeg';
+import worldChefsAssociation from './uploads/2022/09/WORLDCHEFS_Logo.png';
+import galleryImage1 from './uploads/2023/03/Screenshot-2022-09-05-100443-1.jpeg';
+import galleryImage2 from './uploads/2023/02/adityapic.jpeg';
+import galleryImage3 from './uploads/2022/09/With-Hillary-Clinton.jpeg';
 
 export default function HomePage() {
   useEffect(() => {
@@ -13,19 +22,19 @@ export default function HomePage() {
   const associations = [
     { name: 'Taj Hotels', img: `${taj}` },
     { name: 'The Park', img: `${thePark}` },
-    { name: 'Intercontinental Hotels Group', img: './uploads/2022/09/IHG_logo_InterContinental_Hotels_Group-1.png' },
-    { name: 'Radisson Hotel Group', img: './uploads/2022/09/Radisson-Hotel-Group-logo.jpeg' },
-    { name: 'GMR', img: './uploads/2022/09/GMR-logo.png' },
-    { name: 'The Mariott', img: './uploads/2023/04/Mariott-Logo.jpg' },
-    { name: 'INDIAN HOTSPOT', img: './uploads/2022/09/INDIAN-HOTSPOT_COLOUR-LOGO_TRIMMED-768x668.png' },
-    { name: 'Indian Culinary Forum', img: './uploads/2022/09/Indian-culinary-forum.jpeg' },
-    { name: 'WORLD CHEFS ASSOCIATION', img: './uploads/2022/09/WORLDCHEFS_Logo.png' },
+    { name: 'Intercontinental Hotels Group', img: `${ihg}` },
+    { name: 'Radisson Hotel Group', img: `${radisson}` },
+    { name: 'GMR', img: `${gmr}` },
+    { name: 'The Mariott', img: `${mariott}` },
+    { name: 'INDIAN HOTSPOT', img: `${indianHotspot}` },
+    { name: 'Indian Culinary Forum', img: `${indianCulinaryForum}` },
+    { name: 'WORLD CHEFS ASSOCIATION', img: `${worldChefsAssociation}` },
   ];
 
   const galleryImages = [
-    { img: './uploads/2023/03/Screenshot-2022-09-05-100443-1.jpeg', title: 'Chef Aditya at The Park' },
-    { img: './uploads/2023/02/adityapic.jpeg', title: 'Chef Aditya decorating Phyllo Pouches' },
-    { img: './uploads/2022/09/With-Hillary-Clinton.jpeg', title: 'Chef Aditya With Hillary Clinton' },
+    { img: `${galleryImage1}`, title: 'Chef Aditya at The Park' },
+    { img: `${galleryImage2}`, title: 'Chef Aditya decorating Phyllo Pouches' },
+    { img: `${galleryImage3}`, title: 'Chef Aditya With Hillary Clinton' },
   ];
 
   return (
