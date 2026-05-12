@@ -8,40 +8,40 @@ export default function AboutPage() {
   }, []);
 
   const celebratedChefsImages = [
-    { src: '../wp-content/uploads/2022/09/CBOI-3-rotated.jpeg', title: 'Celebrated Chefs Of India' },
-    { src: '../wp-content/uploads/2022/09/CBOI-1.jpeg', title: 'Celebrated Chefs Of India (book cover)' },
-    { src: '../wp-content/uploads/2022/09/with-Chef-Vikas-Khanna-IHG-1.jpg', title: 'with Chef Vikas Khanna, IHG' },
+    { src: './uploads/2022/09/CBOI-3-rotated.jpeg', title: 'Celebrated Chefs Of India' },
+    { src: './uploads/2022/09/CBOI-1.jpeg', title: 'Celebrated Chefs Of India (book cover)' },
+    { src: './uploads/2022/09/with-Chef-Vikas-Khanna-IHG-1.jpg', title: 'with Chef Vikas Khanna, IHG' },
   ];
 
   const certificateImages = [
-    { src: '../wp-content/uploads/2022/09/CERTIFICATE-LEAD-AUDITOE-ISO22000-745x1024.jpg', title: 'CERTIFICATE LEAD AUDITOR ISO22000' },
-    { src: '../wp-content/uploads/2022/09/HACCP-INTERPRETATION-TRAINING-COURSE-737x1024.jpeg', title: 'HACCP INTERPRETATION TRAINING COURSE Certificate' },
+    { src: './uploads/2022/09/CERTIFICATE-LEAD-AUDITOE-ISO22000-745x1024.jpg', title: 'CERTIFICATE LEAD AUDITOR ISO22000' },
+    { src: './uploads/2022/09/HACCP-INTERPRETATION-TRAINING-COURSE-737x1024.jpeg', title: 'HACCP INTERPRETATION TRAINING COURSE Certificate' },
   ];
 
   const bookImages = [
-    { src: '../wp-content/uploads/2022/09/book-synopsis-150x150.jpeg', title: 'book synopsis' },
-    { src: '../wp-content/uploads/2022/09/recipe-by-adityabook-150x150.jpeg', title: 'recipes by Aditya featured in a book' },
-    { src: '../wp-content/uploads/2022/09/acknowledgement-book-aditya-150x150.jpeg', title: 'acknowledgement book aditya' },
-    { src: '../wp-content/uploads/2022/09/book-cover-page-150x150.jpeg', title: 'book cover page' },
+    { src: './uploads/2022/09/book-synopsis-150x150.jpeg', title: 'book synopsis' },
+    { src: './uploads/2022/09/recipe-by-adityabook-150x150.jpeg', title: 'recipes by Aditya featured in a book' },
+    { src: './uploads/2022/09/acknowledgement-book-aditya-150x150.jpeg', title: 'acknowledgement book aditya' },
+    { src: './uploads/2022/09/book-cover-page-150x150.jpeg', title: 'book cover page' },
   ];
 
   const mentorImages = [
-    { src: '../wp-content/uploads/2022/09/NHMCT-panel-discussion-633x1024.jpg', title: 'Panelist at NHMCT' },
-    { src: '../wp-content/uploads/2022/09/Culinary-Mentor-Jagran-Lake-University-Bhopal-2-768x932.jpg', title: 'Culinary Mentor, Jagran Lake University, Bhopal' },
-    { src: '../wp-content/uploads/2022/09/certificate-of-Appreciation-IHM-Bhopal-768x546.jpg', title: 'certificate of Appreciation IHM Bhopal' },
-    { src: '../wp-content/uploads/2022/09/Resource-person-for-webinar-IHM-Bhopal-768x546.jpg', title: 'Resource person for webinar IHM Bhopal' },
+    { src: './uploads/2022/09/NHMCT-panel-discussion-633x1024.jpg', title: 'Panelist at NHMCT' },
+    { src: './uploads/2022/09/Culinary-Mentor-Jagran-Lake-University-Bhopal-2-768x932.jpg', title: 'Culinary Mentor, Jagran Lake University, Bhopal' },
+    { src: './uploads/2022/09/certificate-of-Appreciation-IHM-Bhopal-768x546.jpg', title: 'certificate of Appreciation IHM Bhopal' },
+    { src: './uploads/2022/09/Resource-person-for-webinar-IHM-Bhopal-768x546.jpg', title: 'Resource person for webinar IHM Bhopal' },
   ];
 
   const judgeImages = [
-    { src: '../wp-content/uploads/2022/09/US-CRANBERRY-768x929.jpeg', title: 'US CRANBERRY' },
-    { src: '../wp-content/uploads/2022/09/US-Cranberry-1-768x768.jpeg', title: 'US Cranberry' },
-    { src: '../wp-content/uploads/2022/09/Culinary-masterclass-for-IHE-1-768x756.jpg', title: 'Culinary Masterclass for IHE' },
-    { src: '../wp-content/uploads/2022/09/Judge-Food-Competitions-2.jpg', title: 'Judging Food Competitions' },
+    { src: './uploads/2022/09/US-CRANBERRY-768x929.jpeg', title: 'US CRANBERRY' },
+    { src: './uploads/2022/09/US-Cranberry-1-768x768.jpeg', title: 'US Cranberry' },
+    { src: './uploads/2022/09/Culinary-masterclass-for-IHE-1-768x756.jpg', title: 'Culinary Masterclass for IHE' },
+    { src: './uploads/2022/09/Judge-Food-Competitions-2.jpg', title: 'Judging Food Competitions' },
   ];
 
   const speakerImages = [
-    { src: '../wp-content/uploads/2022/09/WhatsApp-Image-2022-08-28-at-11.51.40-AM-768x576.jpeg', title: 'Indian Culinary Forum Panelist' },
-    { src: '../wp-content/uploads/2022/09/SIAL-2018-eminent-speaker-768x384.jpg', title: 'SIAL 2018, eminent speaker' },
+    { src: './uploads/2022/09/WhatsApp-Image-2022-08-28-at-11.51.40-AM-768x576.jpeg', title: 'Indian Culinary Forum Panelist' },
+    { src: './uploads/2022/09/SIAL-2018-eminent-speaker-768x384.jpg', title: 'SIAL 2018, eminent speaker' },
   ];
 
   return (
