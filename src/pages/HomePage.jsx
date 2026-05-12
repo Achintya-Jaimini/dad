@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import bgImage from './images/Gilawat-in-Parantha-Tacos-1.jpg';
 import taj from './images/Taj_Hotels_logo.svg.png';
+import thePark from './images/the-park.png';
+
 
 export default function HomePage() {
   useEffect(() => {
@@ -10,7 +12,7 @@ export default function HomePage() {
 
   const associations = [
     { name: 'Taj Hotels', img: `${taj}` },
-    { name: 'The Park', img: '../wp-content/uploads/2022/09/the-park.png' },
+    { name: 'The Park', img: `${thePark}` },
     { name: 'Intercontinental Hotels Group', img: '../wp-content/uploads/2022/09/IHG_logo_InterContinental_Hotels_Group-1.png' },
     { name: 'Radisson Hotel Group', img: '../wp-content/uploads/2022/09/Radisson-Hotel-Group-logo.jpeg' },
     { name: 'GMR', img: '../wp-content/uploads/2022/09/GMR-logo.png' },
