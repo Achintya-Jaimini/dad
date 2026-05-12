@@ -9,20 +9,20 @@ export default function HomePage() {
 
   const associations = [
     { name: 'Taj Hotels', img: './images/Taj_Hotels_logo.svg.png' },
-    { name: 'The Park', img: 'https://adityajaimini.com/wp-content/uploads/2022/09/the-park.png' },
-    { name: 'Intercontinental Hotels Group', img: 'https://adityajaimini.com/wp-content/uploads/2022/09/IHG_logo_InterContinental_Hotels_Group-1.png' },
-    { name: 'Radisson Hotel Group', img: 'https://adityajaimini.com/wp-content/uploads/2022/09/Radisson-Hotel-Group-logo.jpeg' },
-    { name: 'GMR', img: 'https://adityajaimini.com/wp-content/uploads/2022/09/GMR-logo.png' },
-    { name: 'The Mariott', img: 'https://adityajaimini.com/wp-content/uploads/2023/04/Mariott-Logo.jpg' },
-    { name: 'INDIAN HOTSPOT', img: 'https://adityajaimini.com/wp-content/uploads/2022/09/INDIAN-HOTSPOT_COLOUR-LOGO_TRIMMED-768x668.png' },
-    { name: 'Indian Culinary Forum', img: 'https://adityajaimini.com/wp-content/uploads/2022/09/Indian-culinary-forum.jpeg' },
-    { name: 'WORLD CHEFS ASSOCIATION', img: 'https://adityajaimini.com/wp-content/uploads/2022/09/WORLDCHEFS_Logo.png' },
+    { name: 'The Park', img: '../wp-content/uploads/2022/09/the-park.png' },
+    { name: 'Intercontinental Hotels Group', img: '../wp-content/uploads/2022/09/IHG_logo_InterContinental_Hotels_Group-1.png' },
+    { name: 'Radisson Hotel Group', img: '../wp-content/uploads/2022/09/Radisson-Hotel-Group-logo.jpeg' },
+    { name: 'GMR', img: '../wp-content/uploads/2022/09/GMR-logo.png' },
+    { name: 'The Mariott', img: '../wp-content/uploads/2023/04/Mariott-Logo.jpg' },
+    { name: 'INDIAN HOTSPOT', img: '../wp-content/uploads/2022/09/INDIAN-HOTSPOT_COLOUR-LOGO_TRIMMED-768x668.png' },
+    { name: 'Indian Culinary Forum', img: '../wp-content/uploads/2022/09/Indian-culinary-forum.jpeg' },
+    { name: 'WORLD CHEFS ASSOCIATION', img: '../wp-content/uploads/2022/09/WORLDCHEFS_Logo.png' },
   ];
 
   const galleryImages = [
-    { img: 'https://adityajaimini.com/wp-content/uploads/2023/03/Screenshot-2022-09-05-100443-1.jpeg', title: 'Chef Aditya at The Park' },
-    { img: 'https://adityajaimini.com/wp-content/uploads/2023/02/adityapic.jpeg', title: 'Chef Aditya decorating Phyllo Pouches' },
-    { img: 'https://adityajaimini.com/wp-content/uploads/2022/09/With-Hillary-Clinton.jpeg', title: 'Chef Aditya With Hillary Clinton' },
+    { img: '../wp-content/uploads/2023/03/Screenshot-2022-09-05-100443-1.jpeg', title: 'Chef Aditya at The Park' },
+    { img: '../wp-content/uploads/2023/02/adityapic.jpeg', title: 'Chef Aditya decorating Phyllo Pouches' },
+    { img: '../wp-content/uploads/2022/09/With-Hillary-Clinton.jpeg', title: 'Chef Aditya With Hillary Clinton' },
   ];
 
   return (
