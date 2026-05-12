@@ -13,6 +13,7 @@ export default function ProjectsPage() {
   const [selectedImage, setSelectedImage] = useState(null);
   const [selectedTitle, setSelectedTitle] = useState('');
 
+  
   // Projects data based on the HTML file
   const projects = [
     {
