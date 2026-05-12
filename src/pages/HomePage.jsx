@@ -34,6 +34,7 @@ export default function HomePage() {
           backgroundImage: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url(${bgImage})',
         }}
       >
+        
         <div className="container mx-auto px-6 text-center text-white">
           <h2 className="text-5xl md:text-7xl font-bold mb-6" style={{ fontFamily: "'Open Sans', sans-serif" }}>
             Chef Aditya Jaimini
