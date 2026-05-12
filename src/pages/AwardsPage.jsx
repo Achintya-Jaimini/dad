@@ -24,7 +24,7 @@ export default function AwardsPage() {
       title: 'Leader of the Year - 2024',
       description: 'Certificate of recognition receiving',
       images: [
-        a1,  
+        aa1,  
         aa2
       ],
       imageLabels: ['Certificate of recognition receiving', 'Certificate of recognition']
@@ -34,7 +34,7 @@ export default function AwardsPage() {
       title: 'Leader of the Quarter - Q2 - 2024',
       description: 'Quarterly leadership recognition award',
       images: [
-        aa1,
+        a1,
         a2
       ],
       imageLabels: ['Award receiving', 'Certificate']

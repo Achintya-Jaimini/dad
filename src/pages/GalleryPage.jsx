@@ -25,8 +25,6 @@ import ini22 from './uploads/2022/09/Chenne-aur-Gulkand-ki-Jugalbandi-Rose-petal
 import ini23 from './uploads/2022/09/chocolate-filled-gulab-jamun-768x532.jpg';
 import ini24 from './uploads/2022/09/Lahsun-Ki-Kheer-768x523.jpg';
 
-
-
 export default function GalleryPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
