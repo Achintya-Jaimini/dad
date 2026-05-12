@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import bgImage from './images/Gilawat-in-Parantha-Tacos-1.jpg';
 
 export default function GalleryPage() {
   useEffect(() => {
@@ -62,7 +63,7 @@ export default function GalleryPage() {
       <div 
         className="relative py-24 bg-cover bg-center"
         style={{ 
-          backgroundImage: 'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)), url("../wp-content/uploads/2022/09/Gilawat-in-Parantha-Tacos-1.jpg")',
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)), url(${bgImage})`,
         }}
       >
         <div className="container mx-auto px-6 text-center text-white">
