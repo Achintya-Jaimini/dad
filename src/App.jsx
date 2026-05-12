@@ -30,7 +30,7 @@ function App() {
             {/* Logo */}
             <Link to="/" className="site-logo">
               <img 
-                src="/images/cropped-cropped-heooo-1-175x82.png" 
+                src="./images/cropped-cropped-heooo-1-175x82.png" 
                 alt="Chef Aditya Jaimini" 
                 className="h-16 w-auto"
               />
