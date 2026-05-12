@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import taj from '../images/Taj_Hotels_logo.svg.png';
 
 export default function HomePage() {
   useEffect(() => {
@@ -8,7 +7,7 @@ export default function HomePage() {
   }, []);
 
   const associations = [
-    { name: 'Taj Hotels', img: {taj } },
+    { name: 'Taj Hotels', img: './images/Taj_Hotels_logo.svg.png' },
     { name: 'The Park', img: 'https://adityajaimini.com/wp-content/uploads/2022/09/the-park.png' },
     { name: 'Intercontinental Hotels Group', img: 'https://adityajaimini.com/wp-content/uploads/2022/09/IHG_logo_InterContinental_Hotels_Group-1.png' },
     { name: 'Radisson Hotel Group', img: 'https://adityajaimini.com/wp-content/uploads/2022/09/Radisson-Hotel-Group-logo.jpeg' },
