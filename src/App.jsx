@@ -10,6 +10,7 @@ import AwardsPage from './pages/AwardsPage';
 import ContactPage from './pages/ContactPage';
 import Media from './pages/Media';  
 import './App.css';
+import logo from './images/cropped-cropped-heooo-1-175x82.png';
 
 function App() {
   const location = useLocation();
@@ -21,7 +22,7 @@ function App() {
 
   return (
     <>
-      <link rel="icon" src='./images/cropped-cropped-heooo-1-175x82.png' />
+      <link rel="icon" src={logo} />
       <div className="min-h-screen" style={{ backgroundColor: '#F7F3F5' }}>
       {/* Header */}
       <header className="site-header" style={{ backgroundColor: '#FFFFFF' }}>
@@ -30,7 +31,7 @@ function App() {
             {/* Logo */}
             <Link to="/" className="site-logo">
               <img 
-                src="./images/cropped-cropped-heooo-1-175x82.png" 
+                src={logo} 
                 alt="Chef Aditya Jaimini" 
                 className="h-16 w-auto"
               />
