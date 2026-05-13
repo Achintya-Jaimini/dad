@@ -11,6 +11,7 @@ import ContactPage from './pages/ContactPage';
 import Media from './pages/Media';  
 import './App.css';
 import logo from './pages/images/cropped-cropped-heooo-1-175x82.png';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
   const location = useLocation();
@@ -53,17 +54,44 @@ function App() {
             </nav>
             
             {/* Social Icons */}
-            <div className="social-icons">
-              <a href="https://twitter.com/aditya_jaimini" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+            <div className="social-icons flex items-center gap-4 ml-auto">
+              <a
+                href="https://twitter.com/aditya_jaimini"
+                aria-label="Twitter"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#2B161B] hover:text-[#1DA1F2] text-2xl transition duration-300"
+              >
                 <i className="fab fa-twitter"></i>
               </a>
-              <a href="https://www.youtube.com/c/ChefAdityaJaiminiSPICE" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+
+              <a
+                href="https://www.youtube.com/c/ChefAdityaJaiminiSPICE"
+                aria-label="YouTube"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#2B161B] hover:text-[#FF0000] text-2xl transition duration-300"
+              >
                 <i className="fab fa-youtube"></i>
               </a>
-              <a href="https://www.facebook.com/aditya.jaimini" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+
+              <a
+                href="https://www.facebook.com/aditya.jaimini"
+                aria-label="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#2B161B] hover:text-[#1877F2] text-2xl transition duration-300"
+              >
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="https://www.instagram.com/chefadityajaimini/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+
+              <a
+                href="https://www.instagram.com/chefadityajaimini/"
+                aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#2B161B] hover:text-[#E4405F] text-2xl transition duration-300"
+              >
                 <i className="fab fa-instagram"></i>
               </a>
             </div>

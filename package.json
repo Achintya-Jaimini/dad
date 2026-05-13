@@ -13,6 +13,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.2.0",
     "aos": "^2.3.4",
     "framer-motion": "^12.38.0",
     "react": "^19.2.5",
