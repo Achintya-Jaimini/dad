@@ -184,7 +184,14 @@ export default function AboutPage() {
       <section className="py-16 px-6 bg-[#F7F3F5]">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6 text-gray-700 leading-relaxed" data-aos="fade-right">
+            <div className="grid grid-cols-2 gap-4" data-aos="fade-right">
+              {celebratedChefsImages.map((img, idx) => (
+                <div key={idx} className="rounded-lg overflow-hidden shadow-md">
+                  <img src={img.src} alt={img.title} className="w-full h-48 object-cover" />
+                </div>
+              ))}
+            </div>
+            <div className="space-y-6 text-gray-700 leading-relaxed" data-aos="fade-left">
               <p>
                 He has associated with renowned Chefs of International fame for events organized by IHG in India - 
                 Hotel Investment Conference South Asia (HICSA dinner at New Delhi). Chef Aditya was asked to support 
@@ -196,13 +203,7 @@ export default function AboutPage() {
                 in her book - 'Celebrated Chefs of India'.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-4" data-aos="fade-left">
-              {celebratedChefsImages.map((img, idx) => (
-                <div key={idx} className="rounded-lg overflow-hidden shadow-md">
-                  <img src={img.src} alt={img.title} className="w-full h-48 object-cover" />
-                </div>
-              ))}
-            </div>
+            
           </div>
         </div>
       </section>
@@ -279,37 +280,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      {/* Jury Member Section
-      <section className="py-16 px-6 bg-[#F7F3F5]">
-        <div className="container mx-auto max-w-6xl">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="grid grid-cols-2 gap-4" data-aos="fade-right">
-              {judgeImages.map((img, idx) => (
-                <div key={idx} className="rounded-lg overflow-hidden shadow-md">
-                  <img src={img.src} alt={img.title} className="w-full h-40 object-cover" />
-                </div>
-              ))}
-            </div>
-            <div className="space-y-6 text-gray-700 leading-relaxed" data-aos="fade-left">
-              <p>
-                Chef Aditya has served as a jury member for various culinary competitions, reviewing and appraising the cuisine 
-                of young chefs 2019 Culinary Arts India, and Jury Member in "Food Service India: East Meets West – Modern Indian 
-                Fusion Culinary Challenge 2018, and 2021 Chef Culinary Challenge Awards organized by Indian Culinary Forum, a 
-                premiere association of chefs in India.
-              </p>
-              <p>
-                He has been judge for recipe and cooking contests like Chef de Jalandhar, US cranberry taste rally etc.
-              </p>
-              <p>
-                Chef Aditya has been appointed as the Culinary Connoisseur of Bakri Chhap a brand working for empowering rural 
-                community with a vision "To revive and recreate every Indian village into a sustainable ecosystem by bringing 
-                about integrated rural development."
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
             {/* Jury Member Section */}
       <section className="py-16 px-6 bg-[#F7F3F5]">
