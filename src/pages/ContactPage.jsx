@@ -77,6 +77,19 @@ export default function ContactPage() {
               </div>
             </div>
             
+            {/* Email */}
+            <div className="flex items-start gap-4 mb-8 group">
+              <div className="w-12 h-12 bg-[#EF4D48] rounded-full flex items-center justify-center text-white shrink-0 group-hover:bg-[#D90700] transition">
+                <i className="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-[#2B161B]">Email</h3>
+                <a href="mailto:aditya@adityajaimini.com" className="text-[#453E3E] hover:text-[#EF4D48] transition break-all">
+                  aditya@adityajaimini.com
+                </a>
+              </div>
+            </div>
+            
             {/* Follow Me Section */}
             <h6 className="text-xl font-semibold text-[#2B161B] mb-4" style={{ fontFamily: "'Open Sans', sans-serif" }}>
               Follow me
