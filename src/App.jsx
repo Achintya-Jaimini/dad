@@ -55,15 +55,16 @@ function App() {
             
             {/* Social Icons */}
             <div className="social-icons flex items-center gap-4 ml-auto">
-              <a
-                href="https://twitter.com/aditya_jaimini"
-                aria-label="Twitter"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#2B161B] hover:text-[#1DA1F2] text-2xl transition duration-300"
-              >
-                <i className="fab fa-twitter"></i>
-              </a>
+            <a
+              href="https://twitter.com/aditya_jaimini"
+              aria-label="X"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#2B161B] hover:text-white text-2xl transition duration-300"
+            >
+              <i className="fa-brands fa-x-twitter"></i>
+            </a>
+            
 
               <a
                 href="https://www.youtube.com/c/ChefAdityaJaiminiSPICE"
@@ -127,7 +128,7 @@ function App() {
             </nav>
             <div className="footer-social flex gap-5">
               <a href="https://twitter.com/aditya_jaimini" target="_blank" rel="noopener noreferrer" className="text-[#2B161B] hover:text-[#1DA1F2] text-xl transition">
-                <i className="fab fa-twitter"></i>
+                <i className="fa-brands fa-x-twitter"></i>
               </a>
               <a href="https://www.youtube.com/c/ChefAdityaJaiminiSPICE" target="_blank" rel="noopener noreferrer" className="text-[#2B161B] hover:text-[#FF0000] text-xl transition">
                 <i className="fab fa-youtube"></i>

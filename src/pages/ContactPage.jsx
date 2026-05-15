@@ -101,7 +101,7 @@ export default function ContactPage() {
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-[#2B161B] rounded-full flex items-center justify-center text-white hover:bg-[#1DA1F2] transition"
               >
-                <i className="fab fa-twitter"></i>
+                <i className="fa-brands fa-x-twitter"></i>
               </a>
               <a 
                 href="https://www.youtube.com/c/ChefAdityaJaiminiSPICE" 
