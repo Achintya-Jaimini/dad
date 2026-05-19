@@ -77,7 +77,7 @@ export default function HomePage() {
           >
             Associations
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 items-center justify-items-center">
+          <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-6 items-center justify-items-center">
             {associations.map((item, idx) => (
               <div 
                 key={idx} 

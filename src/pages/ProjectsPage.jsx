@@ -4,6 +4,7 @@ import p2 from './uploads/2023/08/The-Imperial-Spice.png';
 import p3 from './uploads/2023/08/k-se-kulcha.png';
 import p4 from './uploads/2023/08/Desi-Vibes.jpg';
 import p5 from './uploads/2023/08/Spice-Art.png';
+import p6 from './uploads/2022/09/INDIAN-HOTSPOT_COLOUR-LOGO_TRIMMED-768x668.png';
 
 export default function ProjectsPage() {
   useEffect(() => {
@@ -55,6 +56,14 @@ export default function ProjectsPage() {
       images: [
         { src: p5, label: 'Spice Art' }
       ]
+    },
+    {
+      id: 6,
+      title: 'Indian Hotspot',
+      description: 'A vibrant Indian restaurant concept celebrating the diversity of Indian cuisine',
+      images: [
+        { src: p6, label: 'Indian Hotspot' }
+      ]
     }
   ];
 
@@ -105,7 +114,7 @@ export default function ProjectsPage() {
         </div>
 
         {/* Second Row - 3 projects */}
-        <div className="grid md:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="200">
+        <div className="grid md:grid-cols-4 gap-8" data-aos="fade-up" data-aos-delay="200">
           {projects.slice(2).map((project, idx) => (
             <div 
               key={project.id} 
