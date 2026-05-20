@@ -4,7 +4,9 @@ import p2 from './uploads/2023/08/The-Imperial-Spice.png';
 import p3 from './uploads/2023/08/k-se-kulcha.png';
 import p4 from './uploads/2023/08/Desi-Vibes.jpg';
 import p5 from './uploads/2023/08/Spice-Art.png';
-import p6 from './uploads/2022/09/INDIAN-HOTSPOT_COLOUR-LOGO_TRIMMED-768x668.png';
+import indianHotspot from './uploads/2022/09/INDIAN-HOTSPOT_COLOUR-LOGO_TRIMMED-768x668.png';
+import indianCulinaryForum from './uploads/2022/09/Indian-culinary-forum.jpeg';
+import worldChefsAssociation from './uploads/2022/09/WORLDCHEFS_Logo.png';
 
 export default function ProjectsPage() {
   useEffect(() => {
@@ -62,7 +64,23 @@ export default function ProjectsPage() {
       title: 'Indian Hotspot',
       description: 'A vibrant Indian restaurant concept celebrating the diversity of Indian cuisine',
       images: [
-        { src: p6, label: 'Indian Hotspot' }
+        { src: indianHotspot, label: 'Indian Hotspot' }
+      ]
+    },
+    {
+      id: 7,
+      title: 'Indian Culinary Forum',
+      description: 'A platform for culinary professionals to share knowledge and promote Indian cuisine globally',
+      images: [
+        { src: indianCulinaryForum, label: 'Indian Culinary Forum' }
+      ]
+    },
+    {
+      id: 8,
+      title: 'World Chefs Association',
+      description: 'A global network of culinary professionals and chefs',
+      images: [
+        { src: worldChefsAssociation, label: 'World Chefs Association' }
       ]
     }
   ];
@@ -113,12 +131,47 @@ export default function ProjectsPage() {
           ))}
         </div>
 
-        {/* Second Row - 3 projects */}
+        {/* Second Row - 4 projects */}
         <div className="grid md:grid-cols-4 gap-8" data-aos="fade-up" data-aos-delay="200">
-          {projects.slice(2).map((project, idx) => (
+          {projects.slice(2, 6).map((project, idx) => (
             <div 
               key={project.id} 
               className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer"
+              onClick={() => openLightbox(project.images[0].src, project.title)}
+            >
+              <div className="aspect-square bg-gray-200 overflow-hidden">
+                <img 
+                  src={project.images[0].src} 
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                />
+              </div>
+              <div className="p-5 text-center">
+                <h2 className="text-xl font-bold text-[#2B161B] mb-2">{project.title}</h2>
+                <p className="text-gray-600 text-sm">{project.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <br />
+        <br />
+          <br />
+          <br />
+          <div className="text-center mb-12" data-aos="fade-up">
+        <h1 className="text-5xl md:text-6xl font-bold text-[#2B161B] mb-4" style={{ fontFamily: "'Open Sans', sans-serif" }}>
+            Memberships
+          </h1>
+          </div>
+        {/* Second Row - 2 projects */}
+        <div
+  className="flex flex-wrap justify-center gap-10 mt-10"
+  data-aos="fade-up"
+  data-aos-delay="200"
+>
+          {projects.slice(6, 9).map((project, idx) => (
+            <div 
+              key={project.id} 
+              className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer w-[320px]"
               onClick={() => openLightbox(project.images[0].src, project.title)}
             >
               <div className="aspect-square bg-gray-200 overflow-hidden">

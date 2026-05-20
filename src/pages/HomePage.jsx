@@ -7,9 +7,6 @@ import ihg from './uploads/2022/09/IHG_logo_InterContinental_Hotels_Group-1.png'
 import radisson from './uploads/2022/09/Radisson-Hotel-Group-logo.jpeg';
 import gmr from './uploads/2022/09/GMR-logo.png';
 import mariott from './uploads/2023/04/Mariott-Logo.jpg';
-import indianHotspot from './uploads/2022/09/INDIAN-HOTSPOT_COLOUR-LOGO_TRIMMED-768x668.png';
-import indianCulinaryForum from './uploads/2022/09/Indian-culinary-forum.jpeg';
-import worldChefsAssociation from './uploads/2022/09/WORLDCHEFS_Logo.png';
 import galleryImage1 from './uploads/2023/03/Screenshot-2022-09-05-100443-1.jpeg';
 import galleryImage2 from './uploads/2023/02/adityapic.jpeg';
 import galleryImage3 from './uploads/2022/09/With-Hillary-Clinton.jpeg';
@@ -26,9 +23,6 @@ export default function HomePage() {
     { name: 'Radisson Hotel Group', img: `${radisson}` },
     { name: 'GMR', img: `${gmr}` },
     { name: 'The Mariott', img: `${mariott}` },
-    //{ name: 'INDIAN HOTSPOT', img: `${indianHotspot}` },
-    { name: 'Indian Culinary Forum', img: `${indianCulinaryForum}` },
-    { name: 'WORLD CHEFS ASSOCIATION', img: `${worldChefsAssociation}` },
   ];
 
   const galleryImages = [
