@@ -35,6 +35,14 @@ export default function ProjectsPage() {
     },
     {
       id: 3,
+      title: 'Spice Art',
+      description: 'Award-winning Indian specialty restaurant',
+      images: [
+        { src: p5, label: 'Spice Art' }
+      ]
+    },
+    {
+      id: 4,
       title: 'क Se Kulcha',
       description: 'Traditional kulcha specialty restaurant',
       images: [
@@ -42,19 +50,11 @@ export default function ProjectsPage() {
       ]
     },
     {
-      id: 4,
+      id: 5,
       title: 'Desi Vibes',
       description: 'Modern Indian street food concept',
       images: [
         { src: p4, label: 'Desi Vibes' }
-      ]
-    },
-    {
-      id: 5,
-      title: 'Spice Art',
-      description: 'Award-winning Indian specialty restaurant',
-      images: [
-        { src: p5, label: 'Spice Art' }
       ]
     },
     {
