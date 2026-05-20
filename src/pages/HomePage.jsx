@@ -26,7 +26,7 @@ export default function HomePage() {
     { name: 'Radisson Hotel Group', img: `${radisson}` },
     { name: 'GMR', img: `${gmr}` },
     { name: 'The Mariott', img: `${mariott}` },
-    { name: 'INDIAN HOTSPOT', img: `${indianHotspot}` },
+    //{ name: 'INDIAN HOTSPOT', img: `${indianHotspot}` },
     { name: 'Indian Culinary Forum', img: `${indianCulinaryForum}` },
     { name: 'WORLD CHEFS ASSOCIATION', img: `${worldChefsAssociation}` },
   ];
@@ -77,7 +77,7 @@ export default function HomePage() {
           >
             Associations
           </h2>
-          <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-6 items-center justify-items-center">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6 items-center justify-items-center">
             {associations.map((item, idx) => (
               <div 
                 key={idx} 
