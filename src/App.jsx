@@ -11,7 +11,7 @@ import ContactPage from './pages/ContactPage';
 import Media from './pages/Media';  
 import './App.css';
 import logo from './pages/images/cropped-cropped-heooo-1-175x82.png';
-// import '@fortawesome/fontawesome-free/css/all.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
   const location = useLocation();
