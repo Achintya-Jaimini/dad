@@ -14,7 +14,7 @@ import logo from './pages/images/cropped-cropped-heooo-1-175x82.png';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
-  //const location = useLocation();
+  const location = useLocation();
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
     window.scrollTo(0, 0);
