@@ -25,13 +25,13 @@ function App() {
     <>
       
       {/* <!-- Google tag (gtag.js) --> */}
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-KN3MLJQE9M"></script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-64PEFXFZYG"></script>
       <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments)};
+        function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-KN3MLJQE9M');
+        gtag('config', 'G-64PEFXFZYG');
       </script>
       <link rel="icon" src={logo} />
       <div className="min-h-screen" style={{ backgroundColor: '#F7F3F5' }}>
