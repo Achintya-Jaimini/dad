@@ -15,7 +15,6 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
   const location = useLocation();
-
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
     window.scrollTo(0, 0);
