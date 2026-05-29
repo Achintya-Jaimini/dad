@@ -19,21 +19,6 @@ function App() {
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
     window.scrollTo(0, 0);
-
-    // Google Analytics initialization
-    const gtagScript = document.createElement('script');
-    gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-64PEFXFZYG';
-    gtagScript.async = true;
-    document.head.appendChild(gtagScript);
-
-    const inlineScript = document.createElement('script');
-    inlineScript.innerHTML = `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-64PEFXFZYG');
-    `;
-    document.head.appendChild(inlineScript);
   }, [location]);
 
   return (
