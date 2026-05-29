@@ -23,7 +23,6 @@ function App() {
 
   return (
     <>
-      {/* Google tag (gtag.js) */}
       <link rel="icon" href={logo} />
       <div className="min-h-screen" style={{ backgroundColor: '#F7F3F5' }}>
       {/* Header */}
