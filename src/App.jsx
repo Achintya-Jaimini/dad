@@ -23,6 +23,18 @@ function App() {
 
   return (
     <>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-KN3MLJQE9M"
+        strategy="afterInteractive"
+      />
+      <Script id="ga-script" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-KN3MLJQE9M');
+        `}
+      </Script>
       <link rel="icon" src={logo} />
       <div className="min-h-screen" style={{ backgroundColor: '#F7F3F5' }}>
       {/* Header */}
