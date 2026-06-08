@@ -131,7 +131,7 @@ export default function HomePage() {
           <div className="flex justify-center">
             <div className="max-w-sm w-full text-center" data-aos="fade-up">
               <div className="bg-white bg-opacity-10 rounded-lg p-6 backdrop-blur-sm hover:bg-opacity-20 transition-all">
-                <h3 className="text-xl font-bold text-white mb-2">Life is to enjoy...Eat Dessert First</h3>
+                <h3 className="text-xl font-bold text-white mb-2">Life is to enjoy...Eat the Dessert First</h3>
                 <p className="text-white/70 text-xs mb-4">Collection of unique and simple dessert recipes</p>
                 <p className="text-white/50 text-xs mb-5">CHEF ADITYA JAIMINI</p>
                 <a 
