@@ -105,7 +105,7 @@ export default function HomePage() {
                     src={img.img} 
                     alt={img.title} 
                     className={`w-full h-full transition-transform duration-500 group-hover:scale-105 ${
-                      idx === 2 ? 'object-cover object-top' : 'object-cover'
+                      idx === 0 ? 'object-cover object-top' : 'object-cover'
                     }`}
                   />
                 </div>
