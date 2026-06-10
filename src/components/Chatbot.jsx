@@ -67,7 +67,15 @@ export default function Chatbot() {
   }
 
   if (q.includes("bush") || q.includes("president")) {
-    return "Chef Aditya has been involved in managing prestigious state banquets and hospitality events for world leaders and dignitaries, including events involving U.S. President George W. Bush hosted by India's Prime Minister Dr. Manmohan Singh. Such responsibilities reflect the trust placed in his expertise at the highest levels of hospitality.";
+    return "Chef Aditya has been involved in managing prestigious state banquets and hospitality events for world leaders and dignitaries, including events involving U.S. President George W. Bush hosted by India's Prime Minister Dr. Manmohan Singh and other international leaders such as Bill Clinton and Hillary Clinton. Such responsibilities reflect the trust placed in his expertise at the highest levels of hospitality.";
+  }
+
+  if (q.includes("vikas khanna") || q.includes("collaboration")) {
+    return "Chef Aditya has collaborated with renowned chefs, including celebrity chef Vikas Khanna, on major hospitality and culinary events. These collaborations have showcased his ability to work alongside some of the industry's most respected figures while contributing his own unique culinary perspective.";
+  }
+
+  if(q.includes("clinton") || q.includes("clinton") || q.includes("bill clinton")) {
+    return "Chef Aditya has been involved in managing prestigious state banquets and hospitality events for world leaders and dignitaries, including events involving U.S. President George W. Bush hosted by India's Prime Minister Dr. Manmohan Singh and other international leaders such as Bill Clinton and Hillary Clinton. Such responsibilities reflect the trust placed in his expertise at the highest levels of hospitality.";
   }
 
   if (q.includes("celebrated chefs")) {
