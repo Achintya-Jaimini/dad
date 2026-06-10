@@ -12,6 +12,7 @@ import Media from './pages/Media';
 import './App.css';
 import logo from './pages/images/cropped-cropped-heooo-1-175x82.png';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import Chatbot from './components/chatbot';
 
 function App() {
   const location = useLocation();
@@ -109,6 +110,8 @@ function App() {
         <Route path="/media" element={<Media />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
+
+      <Chatbot />
 
       {/* Footer */}
       <footer className="site-footer" style={{ backgroundColor: '#FFFFFF' }}>
