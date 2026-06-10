@@ -12,7 +12,7 @@ import Media from './pages/Media';
 import './App.css';
 import logo from './pages/images/cropped-cropped-heooo-1-175x82.png';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import Chatbot from './components/chatbot';
+import Chatbot from './components/Chatbot.jsx';
 
 function App() {
   const location = useLocation();
