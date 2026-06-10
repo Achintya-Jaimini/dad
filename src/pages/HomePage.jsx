@@ -26,9 +26,9 @@ export default function HomePage() {
   ];
 
   const galleryImages = [
-    { img: `${galleryImage1}`, title: 'Chef Aditya at The Park' },
-    { img: `${galleryImage2}`, title: 'Chef Aditya decorating Phyllo Pouches' },
     { img: `${galleryImage3}`, title: 'Chef Aditya With Hillary Clinton' },
+    { img: `${galleryImage2}`, title: 'Chef Aditya decorating Phyllo Pouches' },
+    { img: `${galleryImage1}`, title: 'Chef Aditya at The Park' },
   ];
 
   return (
