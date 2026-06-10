@@ -90,6 +90,22 @@ export default function Chatbot() {
     return "Chef Aditya has contributed to hospitality education through academic research. He published a paper titled 'Need for Revamping Culinary Training Practices in Hotel Management Institutes: A Perspective of Professional Chefs of Delhi NCR,' reflecting his commitment to advancing culinary education and professional development.";
   }
 
+  if (q.includes("major achievements") || q.includes("highlights")) { 
+    return "Chef Aditya Jaimini's major achievements include: conceptualizing and developing the award-winning Spice Art restaurant; leading culinary operations at Marriott International; serving as Head of Hospitality at Delhi International Airport Limited; receiving numerous awards such as Best International Chef in the USA (2022) and Chef of the Year (2014); mentoring aspiring chefs through workshops and guest lectures; serving as a judge for prestigious culinary competitions; managing state banquets for world leaders; collaborating with renowned chefs like Vikas Khanna; being featured in 'Celebrated Chefs of India'; contributing to community initiatives; and publishing academic research on culinary education.";
+  }
+
+  if(q.includes("summary") || q.includes("overview") || q.includes("about you")) {  
+    return "Chef Aditya Jaimini is an award-winning Executive Chef, hospitality leader, mentor, food safety expert, and culinary innovator with more than 25 years of international experience. He has held leadership positions with prestigious hospitality organizations such as Taj Hotels, InterContinental Hotels Group (IHG), Radisson Hotels, Delhi International Airport Limited, and Marriott International. Chef Aditya is known for his culinary expertise in Indian, Mediterranean, and Italian cuisine, as well as his contributions to culinary education and mentorship. He has received numerous awards and recognition for his work in the hospitality industry.";
+  }
+
+  if (q.includes("projects")) {
+    return "Chef Aditya has been involved in several notable projects throughout his career, including: conceptualizing and launching Spice Art, an award-winning Indian specialty restaurant; leading culinary operations and menu innovation at Marriott International; overseeing hospitality operations at Delhi International Airport Limited; developing food safety management systems for major hospitality organizations; conducting workshops and guest lectures for culinary students; serving as a judge for prestigious culinary competitions; managing state banquets for world leaders; collaborating with renowned chefs like Vikas Khanna on major culinary events; and contributing to community initiatives focused on nutrition and education.";
+  }
+
+  if (q.includes("media")) {
+    return "Chef Aditya has been featured in various media outlets and publications throughout his career. He was featured in the book 'Celebrated Chefs of India,' which highlights distinguished culinary professionals who have made significant contributions to the industry. Additionally, his work and achievements have been covered by major news outlets, culinary magazines, and hospitality industry publications, showcasing his influence and impact on the culinary world.";
+  }
+
   return "Chef Aditya Jaimini is an award-winning Executive Chef, hospitality leader, mentor, food safety expert, and culinary innovator with more than 25 years of international experience. You may ask about his career journey, Marriott role, Taj Hotels experience, leadership positions, awards, food safety expertise, mentorship activities, culinary specialties, community contributions, research publications, or major achievements in the hospitality industry.";
 };
 
