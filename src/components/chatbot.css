@@ -55,6 +55,7 @@
 .msg.user {
   background: white;
   align-self: flex-end;
+  text-align: right;
   margin-left: auto;
   color: black;
 }
@@ -66,7 +67,7 @@
 
 .chat-input {
   display: flex;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid white;
 }
 
 .chat-input input {
