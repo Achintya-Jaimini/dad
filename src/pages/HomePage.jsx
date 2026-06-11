@@ -10,8 +10,10 @@ import mariott from './uploads/2023/04/Mariott-Logo.jpg';
 import galleryImage1 from './uploads/2023/03/Screenshot-2022-09-05-100443-1.jpeg';
 import galleryImage2 from './uploads/2023/02/adityapic.jpeg';
 import galleryImage3 from './uploads/2022/09/With-Hillary-Clinton.jpeg';
+import useTitle from '../components/useTitle';
 
 export default function HomePage() {
+  useTitle('Home');
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

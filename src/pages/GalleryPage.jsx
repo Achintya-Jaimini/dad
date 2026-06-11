@@ -24,8 +24,10 @@ import ini21 from './uploads/2022/09/Aqua-Tandoori-potato-768x512.jpg';
 import ini22 from './uploads/2022/09/Chenne-aur-Gulkand-ki-Jugalbandi-Rose-petal-jam-stuffed-indian-dessert-768x535.jpg';
 import ini23 from './uploads/2022/09/chocolate-filled-gulab-jamun-768x532.jpg';
 import ini24 from './uploads/2022/09/Lahsun-Ki-Kheer-768x523.jpg';
+import useTitle from '../components/useTitle';
 
 export default function GalleryPage() {
+  useTitle('Gallery');
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

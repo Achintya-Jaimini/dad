@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import useTitle from '../components/useTitle';
 
 export default function ContactPage() {
+  useTitle('Contact');
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

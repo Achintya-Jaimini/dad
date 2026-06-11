@@ -12,8 +12,10 @@ import t2 from './uploads/2022/09/times-food-award-2016-150x150.jpeg';
 import t3 from './uploads/2022/09/times-food-award-2017-150x150.jpeg';
 import t4 from './uploads/2022/09/times-food-award-2018-150x150.jpeg';
 import t5 from './uploads/2022/09/TIMES-FOOD-GUIDE-2018-spice-art-150x150.jpeg';
+import useTitle from '../components/useTitle';
 
 export default function AwardsPage() {
+  useTitle('Awards');
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

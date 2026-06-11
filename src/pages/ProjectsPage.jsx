@@ -7,8 +7,10 @@ import p5 from './uploads/2023/08/Spice-Art.png';
 import indianHotspot from './uploads/2022/09/INDIAN-HOTSPOT_COLOUR-LOGO_TRIMMED-768x668.png';
 import indianCulinaryForum from './uploads/2022/09/Indian-culinary-forum.jpeg';
 import worldChefsAssociation from './uploads/2022/09/WORLDCHEFS_Logo.png';
+import useTitle from '../components/useTitle';
 
 export default function ProjectsPage() {
+  useTitle('Projects');
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

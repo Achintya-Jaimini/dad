@@ -8,8 +8,10 @@ import p6 from './uploads/2022/09/image-768x352.png';
 import p7 from './uploads/2022/09/Olive-it-up-NDTV-1.jpg';
 import p8 from './uploads/2022/09/image-2-768x546.png';
 import p9 from './uploads/2022/09/image-6-768x509.png';
+import useTitle from '../components/useTitle.jsx';
 
 export default function Media() {
+  useTitle('Media');
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

@@ -26,7 +26,9 @@ import tf1 from "./uploads/2022/09/Times-Food-award.jpg";
 import tf2 from "./uploads/2022/09/WhatsApp-Image-2021-02-01-at-8.32.36-PM.jpeg";
 import rp from "./uploads/2022/09/Certificate-for-paper-published-in-international-conference-768x485.jpg";
 import speaker12 from "./uploads/2022/09/Executive-Commitee-ICF-2-724x1024.jpg";
+import useTitle from '../components/useTitle';
 export default function AboutPage() {
+  useTitle('About');
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
