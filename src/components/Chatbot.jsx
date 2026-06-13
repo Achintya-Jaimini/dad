@@ -106,7 +106,7 @@ export default function Chatbot() {
     return "Chef Aditya has been featured in various media outlets and publications throughout his career. He was featured in the book 'Celebrated Chefs of India,' which highlights distinguished culinary professionals who have made significant contributions to the industry. Additionally, his work and achievements have been covered by major news outlets, culinary magazines, and hospitality industry publications, showcasing his influence and impact on the culinary world.";
   }
 
-  return "Chef Aditya Jaimini is an award-winning Executive Chef, hospitality leader, mentor, food safety expert, and culinary innovator with more than 25 years of international experience. You may ask about his career journey, Marriott role, Taj Hotels experience, leadership positions, awards, food safety expertise, mentorship activities, culinary specialties, community contributions, research publications, or major achievements in the hospitality industry.";
+  return "I'm sorry for not having enough information to answer that. You can contact Chef Aditya Jaimini directly through the contact page on this website for more specific inquiries to learn more about your question.";
 };
 
   const sendMessage = () => {
