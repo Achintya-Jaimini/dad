@@ -106,6 +106,10 @@ export default function Chatbot() {
     return "Chef Aditya has been featured in various media outlets and publications throughout his career. He was featured in the book 'Celebrated Chefs of India,' which highlights distinguished culinary professionals who have made significant contributions to the industry. Additionally, his work and achievements have been covered by major news outlets, culinary magazines, and hospitality industry publications, showcasing his influence and impact on the culinary world.";
   }
 
+  if (q.includes("contact") || q.includes("reach you") || q.includes("get in touch")) { 
+    return "You can contact Chef Aditya Jaimini directly through the contact page on this website for more specific inquiries.";
+  }
+
   return "I'm sorry for not having enough information to answer that. You can contact Chef Aditya Jaimini directly through the contact page on this website for more specific inquiries.";
 };
 
