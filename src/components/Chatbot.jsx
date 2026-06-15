@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import "./chatbot.css";
 
 const introMessage =
@@ -204,15 +204,25 @@ const getRemoteReply = async (messages, question) => {
   return data.reply || data.message || data.text || null;
 };
 
+const wait = (ms) => new Promise((resolve) => {
+  window.setTimeout(resolve, ms);
+});
+
 export default function Chatbot() {
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState([{ from: "bot", text: introMessage }]);
   const [input, setInput] = useState("");
   const [isThinking, setIsThinking] = useState(false);
+  const bodyRef = useRef(null);
   const suggestedPrompts = useMemo(
     () => ["Career highlights", "Awards", "Spice Art", "Food safety", "Contact"],
     []
   );
+
+  useEffect(() => {
+    if (!bodyRef.current) return;
+    bodyRef.current.scrollTop = bodyRef.current.scrollHeight;
+  }, [messages, isThinking, open]);
 
   const sendMessage = async (message = input) => {
     const cleanMessage = message.trim();
@@ -228,9 +238,11 @@ export default function Chatbot() {
 
     try {
       const remoteReply = await getRemoteReply(nextMessages, cleanMessage);
+      await wait(2000);
       const botMsg = { from: "bot", text: remoteReply || buildLocalReply(cleanMessage) };
       setMessages((currentMessages) => [...currentMessages, botMsg]);
     } catch {
+      await wait(2000);
       const botMsg = {
         from: "bot",
         text: `${buildLocalReply(cleanMessage)} I could not reach the online LLM service, so I answered from the site's built-in knowledge base.`,
@@ -241,27 +253,43 @@ export default function Chatbot() {
     }
   };
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    sendMessage();
+  };
+
   return (
     <>
-      {/* Floating Button */}
-      <div className="chat-button" onClick={() => setOpen(!open)}>
-        💬
-      </div>
+      <button
+        className="chat-button"
+        onClick={() => setOpen(!open)}
+        type="button"
+        aria-label={open ? "Close chat" : "Open chat"}
+      >
+        {open ? "x" : <span>&#128172;</span>}
+      </button>
 
-      {/* Chat Window */}
       {open && (
-        <div className="chat-window">
+        <section className="chat-window" aria-label="Chef Aditya chatbot">
           <div className="chat-header">
-            Ask About Chef Aditya Jaimini
+            <div>
+              <strong>Ask About Chef Aditya</strong>
+            </div>
           </div>
 
-          <div className="chat-body">
+          <div className="chat-body" ref={bodyRef}>
             {messages.map((m, i) => (
-              <div key={i} className={`msg ${m.from}`}>
+              <div key={`${m.from}-${i}`} className={`msg ${m.from}`}>
                 {m.text}
               </div>
             ))}
-            {isThinking && <div className="msg bot thinking">Thinking...</div>}
+            {isThinking && (
+              <div className="msg bot thinking" aria-label="Assistant is typing">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            )}
           </div>
 
           <div className="chat-suggestions" aria-label="Suggested questions">
@@ -277,23 +305,19 @@ export default function Chatbot() {
             ))}
           </div>
 
-          <div className="chat-input">
+          <form className="chat-input" onSubmit={handleSubmit}>
             <input
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="Type a message..."
+              placeholder="Ask about awards, career, cuisine..."
+              aria-label="Message"
               disabled={isThinking}
-              onKeyDown={(e) => {
-                if (e.key === "Enter") {
-                  sendMessage();
-                }
-              }}
             />
-            <button onClick={() => sendMessage()} disabled={isThinking}>
+            <button type="submit" disabled={isThinking}>
               Send
             </button>
-          </div>
-        </div>
+          </form>
+        </section>
       )}
     </>
   );
