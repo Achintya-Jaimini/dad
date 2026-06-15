@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Routes, Route, Link, useLocation } from 'react-router-dom';
+import { Routes, Route, Link, Navigate, useLocation } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import HomePage from './pages/HomePage';
@@ -109,6 +109,7 @@ function App() {
         <Route path="/awards" element={<AwardsPage />} />
         <Route path="/media" element={<Media />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
 
       <Chatbot />
