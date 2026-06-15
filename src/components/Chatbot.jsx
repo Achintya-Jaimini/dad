@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./chatbot.css";
 
 const introMessage =
@@ -97,6 +98,44 @@ const knowledgeBase = [
   },
 ];
 
+const pageLinks = [
+  {
+    title: "Home",
+    path: "/",
+    keywords: ["home", "homepage", "main page", "start"],
+  },
+  {
+    title: "About",
+    path: "/about",
+    keywords: ["about", "profile", "bio", "biography"],
+  },
+  {
+    title: "Projects",
+    path: "/projects",
+    keywords: ["project", "projects", "work", "restaurant concepts"],
+  },
+  {
+    title: "Gallery",
+    path: "/gallery",
+    keywords: ["gallery", "photos", "photo", "pictures", "images"],
+  },
+  {
+    title: "Awards",
+    path: "/awards",
+    keywords: ["award", "awards", "recognition", "honors"],
+  },
+  {
+    title: "Media",
+    path: "/media",
+    keywords: ["media", "press", "news", "features", "articles"],
+  },
+  {
+    title: "Contact",
+    path: "/contact",
+    keywords: ["contact", "reach", "get in touch", "email", "phone", "booking", "book"],
+  },
+];
+
 const stopWords = new Set([
   "a",
   "about",
@@ -163,6 +202,20 @@ const findRelevantKnowledge = (question) => {
     .slice(0, 3);
 };
 
+const findPageIntent = (question) => {
+  const normalizedQuestion = question.toLowerCase().replace(/[^a-z0-9\s]/g, " ");
+  const compactQuestion = normalizedQuestion.replace(/\s+/g, " ").trim();
+
+  return pageLinks.find(({ keywords }) =>
+    keywords.some((keyword) => {
+      const normalizedKeyword = keyword.toLowerCase();
+      return new RegExp(`(^|\\s)${normalizedKeyword.replace(/\s+/g, "\\s+")}(\\s|$)`).test(
+        compactQuestion
+      );
+    })
+  );
+};
+
 const buildLocalReply = (question) => {
   const matches = findRelevantKnowledge(question);
 
@@ -209,6 +262,7 @@ const wait = (ms) => new Promise((resolve) => {
 });
 
 export default function Chatbot() {
+  const navigate = useNavigate();
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState([{ from: "bot", text: introMessage }]);
   const [input, setInput] = useState("");
@@ -237,6 +291,20 @@ export default function Chatbot() {
     setIsThinking(true);
 
     try {
+      const pageIntent = findPageIntent(cleanMessage);
+
+      if (pageIntent) {
+        await wait(500);
+        navigate(pageIntent.path);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        const botMsg = {
+          from: "bot",
+          text: `Opening the ${pageIntent.title} page for you.`,
+        };
+        setMessages((currentMessages) => [...currentMessages, botMsg]);
+        return;
+      }
+
       const remoteReply = await getRemoteReply(nextMessages, cleanMessage);
       await wait(2000);
       const botMsg = { from: "bot", text: remoteReply || buildLocalReply(cleanMessage) };
