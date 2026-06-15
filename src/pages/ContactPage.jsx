@@ -1,5 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import useTitle from '../components/useTitle';
+
+const CONTACT_EMAIL = 'adityajaimini@gmail.com';
+const FORM_ENDPOINT = `https://formsubmit.co/ajax/${CONTACT_EMAIL}`;
 
 export default function ContactPage() {
   useTitle('Contact');
@@ -16,6 +19,7 @@ export default function ContactPage() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
+  const [submitMessage, setSubmitMessage] = useState('');
 
   const handleChange = (e) => {
     setFormData({
@@ -27,11 +31,36 @@ export default function ContactPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
+    setSubmitStatus(null);
+    setSubmitMessage('');
+
+    const payload = new FormData();
+    payload.append('First Name', formData.firstName.trim());
+    payload.append('Last Name', formData.lastName.trim());
+    payload.append('Email', formData.email.trim());
+    payload.append('Subject', formData.subject.trim());
+    payload.append('Message', formData.message.trim());
+    payload.append('name', `${formData.firstName.trim()} ${formData.lastName.trim()}`);
+    payload.append('_replyto', formData.email.trim());
+    payload.append('_subject', `New website message: ${formData.subject.trim()}`);
+    payload.append('_template', 'table');
+    payload.append('_captcha', 'false');
+
+    try {
+      const response = await fetch(FORM_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json'
+        },
+        body: payload
+      });
+
+      if (!response.ok) {
+        throw new Error('Message could not be sent');
+      }
+
       setSubmitStatus('success');
-      setIsSubmitting(false);
+      setSubmitMessage('Thank you! Your message has been sent successfully.');
       setFormData({
         firstName: '',
         lastName: '',
@@ -39,8 +68,18 @@ export default function ContactPage() {
         subject: '',
         message: ''
       });
-      setTimeout(() => setSubmitStatus(null), 5000);
-    }, 1000);
+    } catch {
+      setSubmitStatus('error');
+      setSubmitMessage(
+        `Sorry, the message could not be sent. Please email ${CONTACT_EMAIL} directly.`
+      );
+    } finally {
+      setIsSubmitting(false);
+      setTimeout(() => {
+        setSubmitStatus(null);
+        setSubmitMessage('');
+      }, 7000);
+    }
   };
 
   return (
@@ -86,8 +125,8 @@ export default function ContactPage() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-[#2B161B]">Email</h3>
-                <a href="mailto:adityajaimini@gmail.com" className="text-[#453E3E] hover:text-[#EF4D48] transition">
-                  adityajaimini@gmail.com
+                <a href={`mailto:${CONTACT_EMAIL}`} className="text-[#453E3E] hover:text-[#EF4D48] transition">
+                  {CONTACT_EMAIL}
                 </a>
               </div>
             </div>
@@ -144,7 +183,13 @@ export default function ContactPage() {
             
             {submitStatus === 'success' && (
               <div className="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
-                Thank you! Your message has been sent successfully.
+                {submitMessage}
+              </div>
+            )}
+
+            {submitStatus === 'error' && (
+              <div className="mb-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">
+                {submitMessage}
               </div>
             )}
             
