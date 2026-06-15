@@ -109,7 +109,7 @@ export default function Chatbot() {
   if (q.includes("contact") || q.includes("reach you") || q.includes("get in touch")) { 
     return "You can contact Chef Aditya Jaimini directly through the contact page on this website for more specific inquiries.";
   }
-
+  
   return "I'm sorry for not having enough information to answer that. You can contact Chef Aditya Jaimini directly through the contact page on this website for more specific inquiries.";
 };
 
@@ -134,7 +134,7 @@ export default function Chatbot() {
       {open && (
         <div className="chat-window">
           <div className="chat-header">
-            Ask About Me
+            Ask About Chef Aditya Jaimini
           </div>
 
           <div className="chat-body">
