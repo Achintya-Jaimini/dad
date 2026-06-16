@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { Routes, Route, Link, Navigate, useLocation } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -14,8 +14,133 @@ import logo from './pages/images/cropped-cropped-heooo-1-175x82.png';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Chatbot from './components/Chatbot.jsx';
 
+function useBackgroundMusic() {
+  const audioRef = useRef({
+    context: null,
+    gain: null,
+    timer: null,
+    isPlaying: false,
+  });
+
+  const playMusic = async () => {
+    const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+
+    if (!AudioContextClass) {
+      return false;
+    }
+
+    const audio = audioRef.current;
+
+    if (!audio.context) {
+      audio.context = new AudioContextClass();
+      audio.gain = audio.context.createGain();
+      audio.gain.gain.value = 0;
+      audio.gain.connect(audio.context.destination);
+    }
+
+    await audio.context.resume();
+
+    if (audio.context.state !== 'running') {
+      return false;
+    }
+
+    if (audio.isPlaying) {
+      return true;
+    }
+
+    audio.gain.gain.setTargetAtTime(0.12, audio.context.currentTime, 0.1);
+
+    const melody = [261.63, 293.66, 329.63, 392, 329.63, 293.66, 261.63, 246.94];
+    const drone = [130.81, 196];
+
+    const playTone = (frequency, startAt, duration, volume, type = 'triangle') => {
+      const oscillator = audio.context.createOscillator();
+      const envelope = audio.context.createGain();
+
+      oscillator.type = type;
+      oscillator.frequency.setValueAtTime(frequency, startAt);
+      envelope.gain.setValueAtTime(0.001, startAt);
+      envelope.gain.exponentialRampToValueAtTime(volume, startAt + 0.08);
+      envelope.gain.exponentialRampToValueAtTime(0.001, startAt + duration);
+
+      oscillator.connect(envelope);
+      envelope.connect(audio.gain);
+      oscillator.start(startAt);
+      oscillator.stop(startAt + duration + 0.05);
+    };
+
+    const scheduleMusic = () => {
+      const startAt = audio.context.currentTime + 0.08;
+      const beat = 0.5;
+
+      drone.forEach((frequency) => {
+        playTone(frequency, startAt, beat * melody.length, 0.055, 'sine');
+      });
+
+      melody.forEach((frequency, index) => {
+        playTone(frequency, startAt + index * beat, beat * 1.6, index % 4 === 0 ? 0.18 : 0.13);
+      });
+    };
+
+    scheduleMusic();
+
+    if (audio.timer) {
+      window.clearInterval(audio.timer);
+    }
+
+    audio.timer = window.setInterval(scheduleMusic, 4000);
+    audio.isPlaying = true;
+    return true;
+  };
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    const startMusic = () => {
+      playMusic().catch(() => {});
+    };
+    const startMusicFromControl = (event) => {
+      if (!event.target.closest('button, a, input[type="button"], input[type="submit"], [role="button"]')) {
+        return;
+      }
+
+      startMusic();
+    };
+
+    startMusic();
+
+    window.addEventListener('load', startMusic, { once: true });
+    document.addEventListener('visibilitychange', startMusic, { once: true });
+    document.addEventListener('click', startMusicFromControl, true);
+    window.addEventListener('keydown', startMusic, { once: true });
+
+    return () => {
+      window.removeEventListener('load', startMusic);
+      document.removeEventListener('visibilitychange', startMusic);
+      document.removeEventListener('click', startMusicFromControl, true);
+      window.removeEventListener('keydown', startMusic);
+
+      if (audio.timer) {
+        window.clearInterval(audio.timer);
+        audio.timer = null;
+      }
+
+      audio.isPlaying = false;
+
+      if (audio.context) {
+        audio.context.close();
+        audio.context = null;
+        audio.gain = null;
+      }
+    };
+  }, []);
+
+  return null;
+}
+
 function App() {
   const location = useLocation();
+  useBackgroundMusic();
+
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
     window.scrollTo(0, 0);
