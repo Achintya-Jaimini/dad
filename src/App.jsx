@@ -150,14 +150,6 @@ function App() {
     <>
       <link rel="icon" href={logo} />
       <div className="min-h-screen" style={{ backgroundColor: '#F7F3F5' }}>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-SQXR1K6PSG"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){ dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-SQXR1K6PSG');
-      </script>
       {/* Header */}
       <header className="site-header" style={{ backgroundColor: '#FFFFFF' }}>
         <div className="container mx-auto px-6 py-4">
