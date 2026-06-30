@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import useTitle from '../components/useTitle';
 
-const CONTACT_EMAIL = 'achintyajaimini@gmail.com';
+const CONTACT_EMAIL = 'adityajaimini@gmail.com';
 const FORM_ENDPOINT = `https://formsubmit.co/ajax/${CONTACT_EMAIL}`;
 
 export default function ContactPage() {
